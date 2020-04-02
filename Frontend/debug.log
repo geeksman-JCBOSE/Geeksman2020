@@ -1,0 +1,5 @@
+[0308/084009.554:ERROR:process_info.cc(617)] range at 0x81b21fe000, size 0x2000 fully unreadable
+[0308/084009.557:ERROR:process_info.cc(617)] range at 0x81a71c4000, size 0x1788 fully unreadable
+[0308/084009.736:ERROR:process_info.cc(329)] VirtualQueryEx: Access is denied. (0x5)
+[0308/084009.737:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0308/084009.737:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)
