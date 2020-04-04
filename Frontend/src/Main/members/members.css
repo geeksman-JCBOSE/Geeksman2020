@@ -1,0 +1,105 @@
+.md{
+    display: grid;
+    grid-template-rows:auto;
+    background: #2b3137;
+    color:hsl(0,0%,100%,.6)
+}
+body{
+    overflow-y: scroll!important;
+}
+.d{
+height:fit-content;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+.dh{
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+.dcards{
+    display: flex;
+    width:80%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+}
+.dcard{
+    margin:1.5rem;
+    max-width: 13rem;
+    background-color: rgba(0,0,0,.2);
+}
+.dimgstyle{
+    margin:.4rem;
+    height:7rem;
+    width:7rem;
+    border-radius: 50%;
+}
+.dname{
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+.dskill{
+    font-size: 1rem;
+    padding:1.5rem;
+}
+.m{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.dimg{
+    margin: .6rem;
+}
+.mh{
+    padding:2rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-size: 1.5rem;
+}
+.mcards{
+    display: flex;
+    width:80%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap;
+}
+.mcard{
+    margin:2rem;
+    background-color: rgba(0,0,0,.2);
+    max-width: 13rem;
+    
+}
+
+   
+.mimgstyle{  
+    height:7rem;
+    width:7rem;
+    border-radius:50%;
+    margin:.4rem;
+    margin-top: .6rem !important;
+}
+
+.aboutm{
+
+
+}
+.mname{
+    text-transform: uppercase;
+}
+.mdesignation{
+    text-transform: uppercase;
+}
+.mabout{
+    max-width: 13rem;
+    text-align: center;
+    padding:.4rem;
+}

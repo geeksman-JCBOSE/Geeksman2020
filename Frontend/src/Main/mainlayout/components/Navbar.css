@@ -1,0 +1,70 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    color: hsla(0,0%,100%,.7);
+    background-color: #24292e;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.whygeek{
+    padding-left: 1.5rem;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+
+}
+.nav-logo{
+height: 3rem;
+width:3rem;
+border-radius: 50%; 
+}
+.nav-links{
+    display: flex;
+    width:47%;
+    justify-content: space-around;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+color:hsla(0,0%,100%,.7);
+letter-spacing: 2px;
+text-decoration: none;
+font-weight: bold;
+font-size: 1.3rem;
+}
+.burger{
+    display: none;
+}
+.burger div{
+    transition: all .3s;
+    width:1.8rem;
+    height:.3rem;
+    background-color: rgb(226,226,226);
+    margin:.3rem;
+}
+.nav-active{
+    transform: translateX(0);
+}
+@keyframes navLinkFade{
+    from{
+        opacity:0;
+        transform:translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform:translateX(0px);
+    }
+}
+.toggle .line1{
+transform:rotate(-45deg) translate(-9px,6px)
+}
+.toggle .line2{
+    opacity:0;
+}
+.toggle .line3{
+    transform:rotate(45deg) translate(-9px,-6px)
+}

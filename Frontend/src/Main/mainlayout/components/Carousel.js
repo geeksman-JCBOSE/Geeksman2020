@@ -18,8 +18,6 @@ class Corousel extends React.Component {
         <h1>Corousel</h1>
         
         </div>
-
-
      );}
 }
 
