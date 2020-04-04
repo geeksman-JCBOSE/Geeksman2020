@@ -10,6 +10,14 @@
     display: flex;
     align-items: center;
 }
+html{
+    overflow: hidden;
+}
+body{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
 .whygeek{
     padding-left: 1.5rem;
     font-size: 1.3rem;

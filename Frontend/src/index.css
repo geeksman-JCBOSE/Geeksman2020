@@ -26,12 +26,11 @@ html{
  .nav-links{
    position: absolute;
    right: 0;
-   height:92vh;
-   top:11.4vh;
    display: flex;
+   height:92vh;
    flex-direction: column;
    align-items: center;
-   width:50%;
+   width:100%!important;
    transform:translateX(100%);
    transition: transform 0.5s ease-in;
    background-color: #24292e;

@@ -5,11 +5,18 @@ import image from './IMG_1010.JPG'
 class Members extends React.Component {
   componentDidMount() {
   }
+  handleload=()=>{
+    const d=document.querySelector('.d')
+    const heightd=d.getBoundingClientRect()
+    const body=document.querySelector('body')
+    const heighbody=body.getBoundingClientRect()
+    const m=document.querySelector('body')
+  }
     render() {
     return (
     
-        <div className="navbar">
-          <div className='md'>
+        <div className="navbar" >
+          <div className='md' onLoad={this.handleload}>
             <div className='d'>
               <div className='dh'>
                 <h1>Our Developers</h1>

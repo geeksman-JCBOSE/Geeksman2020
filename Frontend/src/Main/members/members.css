@@ -2,7 +2,7 @@
     display: grid;
     grid-template-rows:auto;
     background: #2b3137;
-    color:hsl(0,0%,100%,.6)
+    color:hsl(0,0%,100%,.6);
 }
 body{
     overflow-y: scroll!important;
@@ -15,10 +15,11 @@ justify-content: space-around;
 align-items: center;
 }
 .dh{
-    padding: 2rem;
-    font-size: 1.5rem;
+  
     text-transform: uppercase;
     letter-spacing: .3rem;
+    box-sizing: content-box;
+    margin:1.5rem;
 }
 .dcards{
     display: flex;
@@ -49,8 +50,8 @@ align-items: center;
     padding:1.5rem;
 }
 .m{
-    height: fit-content;
     display: flex;
+    height:fit-content;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
