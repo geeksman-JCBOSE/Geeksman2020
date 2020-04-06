@@ -1,78 +1,106 @@
-.nav{
+.nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
-    color: hsla(0,0%,100%,.7);
+    min-height: 4vh;
+    color: white;
     background-color: #24292e;
+
+
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
 }
-html{
+
+html {
     overflow: hidden;
 }
-body{
+
+body {
     overflow: hidden;
     position: relative;
     height: 100vh;
 }
-.whygeek{
+
+.whygeek {
     padding-left: 1.5rem;
-    font-size: 1.3rem;
-    letter-spacing: .1rem;
+    font-size: .9rem;
+    font-family: 'Comfortaa', cursive;
 
 }
-.nav-logo{
-height: 3rem;
-width:3rem;
-border-radius: 50%; 
+
+.nav-logo {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
 }
-.nav-links{
+
+.nav-links {
     display: flex;
-    width:47%;
+    width: 40%;
     justify-content: space-around;
+    margin-left: 20rem;
+
 }
-.nav-links li{
+
+.nav-links li {
     list-style: none;
 }
-.nav-links a{
-color:hsla(0,0%,100%,.7);
-letter-spacing: 2px;
-text-decoration: none;
-font-weight: bold;
-font-size: 1.3rem;
+
+.nav-links a {
+    color: white;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: .9rem;
+    font-family: 'Comfortaa', cursive;
 }
-.burger{
+
+.burger {
     display: none;
 }
-.burger div{
+
+.burger div {
     transition: all .3s;
-    width:1.8rem;
-    height:.3rem;
-    background-color: rgb(226,226,226);
-    margin:.3rem;
+    width: 1.8rem;
+    height: .3rem;
+    background-color: rgb(226, 226, 226);
+    margin: .3rem;
 }
-.nav-active{
+
+.nav-active {
     transform: translateX(0);
 }
-@keyframes navLinkFade{
-    from{
-        opacity:0;
-        transform:translateX(50px);
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
     }
-    to{
+
+    to {
         opacity: 1;
-        transform:translateX(0px);
+        transform: translateX(0px);
     }
 }
-.toggle .line1{
-transform:rotate(-45deg) translate(-9px,6px)
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-9px, 6px)
 }
-.toggle .line2{
-    opacity:0;
+
+.toggle .line2 {
+    opacity: 0;
 }
-.toggle .line3{
-    transform:rotate(45deg) translate(-9px,-6px)
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-9px, -6px)
+}
+
+.heading {
+    font-family: 'Special Elite', cursive;
+    margin-top: 7rem;
+    font-size: 70px;
+    color: black;
+    letter-spacing: .5rem;
 }

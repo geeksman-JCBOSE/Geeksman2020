@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-
+import image from './learn-lab.svg'
+import './corousel.css'
 
 class Corousel extends React.Component {
   componentDidMount() {
@@ -14,9 +15,14 @@ class Corousel extends React.Component {
     return (
     
         <div className="corousal">
-        
-        <h1>Corousel</h1>
-        
+        <div className="row">
+        <div className="col50">
+        <img src={image} className="icon1" />
+        </div>
+        <div className="col50">
+        <h1 className="heading">Geeksman</h1>
+        </div>
+        </div>
         </div>
      );}
 }

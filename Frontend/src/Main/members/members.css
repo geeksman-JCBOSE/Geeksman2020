@@ -1,106 +1,130 @@
-.md{
+.md {
     display: grid;
-    grid-template-rows:auto;
+    grid-template-rows: auto;
     background: #2b3137;
-    color:hsl(0,0%,100%,.6);
+    color: hsl(0, 0%, 100%, .6);
 }
-body{
-    overflow-y: scroll!important;
+
+body {
+    overflow-y: scroll !important;
 }
-.d{
-height:fit-content;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
+
+.d {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
 }
-.dh{
-  
+
+.hr1 {
+    width: 90%;
+    margin-top: -.8rem;
+}
+
+.dh {
+
     text-transform: uppercase;
     letter-spacing: .3rem;
     box-sizing: content-box;
-    margin:1.5rem;
+    margin: 1.5rem;
+    font-size: 1.2rem;
 }
-.dcards{
+
+.dcards {
     display: flex;
-    width:80%;
+    width: 80%;
     height: auto;
     justify-content: space-around;
     align-items: center;
     flex-flow: wrap;
 }
-.dcard{
-    margin:1.5rem;
+
+.dcard {
+    margin: 1.5rem;
     max-width: 13rem;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(0, 0, 0, .2);
 }
-.dimgstyle{
-    margin:.4rem;
-    height:7rem;
-    width:7rem;
+
+.dimgstyle {
+    margin: .4rem;
+    height: 7rem;
+    width: 7rem;
     border-radius: 50%;
+    border: 4px solid goldenrod;
 }
-.dname{
+
+.dname {
     text-transform: uppercase;
     letter-spacing: .1rem;
     font-weight: bold;
+    font-family: 'Comfortaa', cursive;
 }
-.dskill{
+
+.dskill {
     font-size: 1rem;
-    padding:1.5rem;
+    padding: 1.5rem;
 }
-.m{
+
+.m {
     display: flex;
-    height:fit-content;
+    height: fit-content;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-.dimg{
+
+.dimg {
     margin: .6rem;
 }
-.mh{
-    padding:2rem;
+
+.mh {
+    padding: 2rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+
 }
-.mcards{
+
+.mcards {
     display: flex;
-    width:80%;
+    width: 80%;
     height: auto;
     justify-content: space-around;
     align-items: center;
     flex-flow: wrap;
 }
-.mcard{
-    margin:2rem;
-    background-color: rgba(0,0,0,.2);
+
+.mcard {
+    margin: 2rem;
+    background-color: rgba(0, 0, 0, .2);
     max-width: 13rem;
-    
+
 }
 
-   
-.mimgstyle{  
-    height:7rem;
-    width:7rem;
-    border-radius:50%;
-    margin:.4rem;
+
+.mimgstyle {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin: .4rem;
     margin-top: .6rem !important;
+    border: 4px solid goldenrod;
 }
 
-.aboutm{
+.aboutm {}
 
-
-}
-.mname{
+.mname {
     text-transform: uppercase;
 }
-.mdesignation{
+
+.mdesignation {
     text-transform: uppercase;
 }
-.mabout{
+
+.mabout {
     max-width: 13rem;
     text-align: center;
-    padding:.4rem;
+    padding: .4rem;
 }

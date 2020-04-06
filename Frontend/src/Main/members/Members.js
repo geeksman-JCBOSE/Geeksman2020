@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDom from 'react-dom'
 import './members.css'
 import image from './IMG_1010.JPG'
+import Navbar from '../mainlayout/components/Navbar'
 class Members extends React.Component {
   componentDidMount() {
   }
@@ -16,10 +17,14 @@ class Members extends React.Component {
     return (
     
         <div className="navbar" >
+        <div>
+        <Navbar />
+        </div>
           <div className='md' onLoad={this.handleload}>
             <div className='d'>
               <div className='dh'>
                 <h1>Our Developers</h1>
+                <hr className="hr1"  />
               </div>
               <div className='dcards'>
               <div className='dcard'>
@@ -36,6 +41,7 @@ class Members extends React.Component {
             <div className='m'>
                <div className="mh">
                      <h1>Our Team</h1>
+        <hr className="hr1" />
                </div>
                <div className='mcards'>
                <div className='mcard'>

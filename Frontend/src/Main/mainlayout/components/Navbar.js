@@ -40,6 +40,7 @@ class Navbar extends React.Component {
         <h4 className="whygeek">Why geeksman?</h4>
          </div>
          <ul className="nav-links">
+           <li><Link to="/">Home</Link></li>
            <li><Link to="#">Contact Us</Link></li>
            <li><Link to="/members">Our Team</Link></li>
            <li><Link to="#">Events</Link></li>
