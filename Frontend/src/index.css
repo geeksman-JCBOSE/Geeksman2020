@@ -62,8 +62,3 @@ code {
     font-size: 20px;
   }
 }
-
-@font-face {
-  font-family: helvetica;
-  src: url(Helvetica 400.ttf);
-}

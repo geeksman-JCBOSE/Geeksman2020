@@ -43,6 +43,7 @@
 .gkmnhr {
     max-width: 60%;
     margin-top: -1.2rem;
+    border: 1px solid goldenrod;
 
 }
 
@@ -60,7 +61,7 @@
     padding: 18px;
     border-radius: 50px;
     display: inline-block;
-    border: none;
+    border: 1.5px solid goldenrod;
     transition: all 0.4s ease 0s;
     margin-top: 1rem;
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import './Navbar.css'
+import './css/Navbar.css'
+import image from './icons/gksmn.PNG'
 import {Link,Navlink}  from 'react-router-dom'
 class Navbar extends React.Component {
   componentDidMount() {
@@ -36,7 +37,7 @@ class Navbar extends React.Component {
       <div className="navbar">
  <div className="nav">
          <div className="logo">
-        <img src="#" className="nav-logo"/>
+        <img src={image} className="nav-logo"/>
         <h4 className="whygeek">why geeksman?</h4>
          </div>
          <ul className="nav-links">

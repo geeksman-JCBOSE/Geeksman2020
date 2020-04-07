@@ -9,14 +9,14 @@
     font-family: 'Major Mono Display', monospace;
     letter-spacing: -0.03rem;
     text-decoration: none;
-    background: rgb(230, 187, 78);
+    background: rgb(206, 158, 39);
     padding: 18px;
     border-radius: 50px;
     display: inline-block;
-    border: none;
+    border: 1.5px solid rgb(201, 115, 36);
     transition: all 0.4s ease 0s;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
 }
 
 .example_b2:hover {
@@ -24,4 +24,16 @@
     -webkit-box-shadow: 0px 5px 40px -10px rgba(233, 205, 47, 0.57);
     -moz-box-shadow: 0px 5px 40px -10px rgba(233, 205, 47, 0.57);
     transition: all 0.4s ease 0s;
+}
+
+.iconabout {
+    height: 60%;
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+
+.iconabout2 {
+    height: 60%;
+    margin-top: -3rem;
+    margin-right: 5rem;
 }

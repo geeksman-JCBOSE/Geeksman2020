@@ -1,9 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import image from './codechef.png'
-import image2 from './arrow.png'
-import image3 from './gksmn.PNG'
-import './corousel.css'
+import image from './icons/gksmn.PNG'
+import './css/corousel.css'
 
 class Corousel extends React.Component {
   componentDidMount() {
@@ -20,7 +18,7 @@ class Corousel extends React.Component {
         <div className="row">
         <div className="col50">
         
-        <img src={image3} className="icon1" />
+        <img src={image} className="icon1" />
         
         
         </div>
