@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
+import './about.css'
 
 class About extends React.Component {
   componentDidMount() {
@@ -12,9 +13,12 @@ class About extends React.Component {
     render() {
     return (
     
-        <div className="navbar">
+        <div className="aboutis">
         
-        <h1>About</h1>
+        <div className="about">
+        <div className="button_cont" align="center"><a className="example_b2" href="add-website-here" target="_blank" rel="nofollow noopener">our team</a>
+        </div>
+        </div>
         
         </div>
 

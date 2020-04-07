@@ -37,13 +37,13 @@ class Navbar extends React.Component {
  <div className="nav">
          <div className="logo">
         <img src="#" className="nav-logo"/>
-        <h4 className="whygeek">Why geeksman?</h4>
+        <h4 className="whygeek">why geeksman?</h4>
          </div>
          <ul className="nav-links">
-           <li><Link to="/">Home</Link></li>
-           <li><Link to="#">Contact Us</Link></li>
-           <li><Link to="/members">Our Team</Link></li>
-           <li><Link to="#">Events</Link></li>
+           <li><Link to="/">home</Link></li>
+           <li><Link to="#">contact us</Link></li>
+           <li><Link to="/members">our team</Link></li>
+           <li><Link to="#">events</Link></li>
          </ul>
          <div className="burger" onClick={this.handleclick}>
            <div className="line1"></div>

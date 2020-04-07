@@ -25,9 +25,9 @@ body {
 }
 
 .whygeek {
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     font-size: .9rem;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Major Mono Display', monospace;
 
 }
 
@@ -53,8 +53,8 @@ body {
     color: white;
     letter-spacing: 2px;
     text-decoration: none;
-    font-size: .9rem;
-    font-family: 'Comfortaa', cursive;
+    font-size: .8rem;
+    font-family: 'Major Mono Display', monospace;
 }
 
 .burger {
