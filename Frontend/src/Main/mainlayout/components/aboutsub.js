@@ -22,7 +22,10 @@ class Aboutsub extends React.Component {
         </div>
         
         <div className="col50a col50a2">
+        
         <h1 className="subheading1a">geeksman is the official campus chapter of codechef</h1>
+        <div className="button_cont" align="center"><Link className="example_bcode" to="/" rel="nofollow noopener">visit codechef</Link></div>
+        
         </div>
         </div>
         <div className="row3">
