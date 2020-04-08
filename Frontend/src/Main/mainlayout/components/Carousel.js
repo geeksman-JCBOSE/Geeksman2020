@@ -15,14 +15,11 @@ class Corousel extends React.Component {
     return (
     
         <div className="corousal">
-        <div className="row">
-        <div className="col50">
-        
-        <img src={image} className="icon1" />
-        
-        
+        <div className="row clearfix">
+        <div className="col50 col501">
+        <img src={image} className="icon1" id="custicon1" />
         </div>
-        <div className="col50">
+        <div className="col50 col502">
        <h1 className="heading">Geeksman</h1>
         <hr className="gkmnhr" />
         <h1 className="subheading1">We code therefore we are</h1>

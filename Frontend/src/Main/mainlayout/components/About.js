@@ -15,7 +15,6 @@ class About extends React.Component {
     return (
     
         <div className="aboutis">
-        
         <div className="about">
         <div className="button_cont" align="center"><a className="example_b2" href="add-website-here" target="_blank" rel="nofollow noopener">our team</a>
         </div>
