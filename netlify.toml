@@ -1,10 +1,4 @@
 
-[build]
-  command = "npm run build"
-  publish="Frontend/public"
-  base = "Frontend"
-
-
 
 [[redirects]]
   from = "/*"
