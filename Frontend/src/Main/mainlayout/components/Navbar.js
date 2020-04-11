@@ -44,7 +44,7 @@ class Navbar extends React.Component {
            <li><Link to="/">home</Link></li>
            <li><Link to="#">contact us</Link></li>
            <li><Link to="/members">our team</Link></li>
-           <li><Link to="#">events</Link></li>
+           <li><Link to="/events">events</Link></li>
          </ul>
          <div className="burger" onClick={this.handleclick}>
            <div className="line1"></div>
