@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDom from 'react-dom'
 import './members.css'
 import back from './memtop.png';
+import {Link} from 'react-router-dom'
 import image from './IMG_1010.JPG'
 import Navbar from '../mainlayout/components/Navbar'
 class Members extends React.Component {
@@ -98,16 +99,23 @@ class Members extends React.Component {
                    </div>
                    <div className='aboutd'>
                        <span className='dname'>Name</span>
-                       <span className='dskill'>Members</span>
+                       <span className='dskill'>Tagline</span>
                    </div>
                    <div className="hovermaterial">
                    <div className='aboutd'>
                        <span className='dname'>Name</span>
-                       <span className='dskill'>Members</span>
+                       <div className='dskill'>tagline</div>
                    </div>
                    <div className="contenthover">
-                      <span className="tagline">"Tagline"</span>
-                      <span className="otherdetails">otherdetails</span>
+                      <span className="year">year</span>
+                      <div className="description">description
+                      </div>
+                      <div className="address">address</div>
+                      <div className="icons">
+                      <Link to="#" ><i class="fab fa-github"></i></Link>
+                      <Link to="#" ><i class="fab fa-linkedin"></i></Link>
+                      <Link to="#" ><i className=""></i></Link>
+                      </div>
                    </div>
                    </div>
               </div>

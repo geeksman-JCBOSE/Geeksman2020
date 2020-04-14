@@ -78,7 +78,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    display: none;
+display: none; 
     height: 0%;
     width: 100%;
     transition: all .4s;
@@ -166,3 +166,24 @@ body {
     font-size: 1.2rem;
 
 }
+.year{
+    display: block;
+    padding-bottom: .4rem;
+    }
+    .description{
+   
+    padding-bottom: .4rem;
+    }
+    .address{
+   
+    padding-bottom: .4rem;
+    }
+    .icons{
+
+   
+
+    }
+    .icons i{
+        color:#FE7F9C;
+        padding-right: .2rem;
+    }
