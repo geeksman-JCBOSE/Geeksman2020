@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import './events.css'
+import eventop from '../members/memtop.png'
 import Navbar from '../mainlayout/components/Navbar'
 class Events extends React.Component {
   componentDidMount() {
@@ -15,27 +16,13 @@ class Events extends React.Component {
     render() {
     return (
         <div className="navbar">
-        <div className="eventspage">
-        <div>
-        <Navbar />
-        </div>
-        <div className="eventsheading">
-         Upcoming Events
-        </div>
-        <div className='eventscards'>
-        <div className="eventscard">
-           <div className='picture'>
-             <img src="#" className="picturedesign"/> 
-           </div>
-           <div className="moreinfo">
-               <button className="buttonstyle" onClick={this.handleclick2}>More info</button>&rarr;
-           </div>
-           <div className="clickon" >
-               content
-           </div>
-        </div>
-         </div>
-        </div>
+         <div className="eventstop">
+          <img src={eventop} className="eventstopstyle" />
+          <div className="eventmessage">
+             <span className="eventheader">Events</span>
+             <span className="eventtag">Learn,Compete & Grow</span>
+          </div>
+         </div>       
         </div>
      );}
 }

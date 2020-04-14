@@ -1,10 +1,33 @@
 .md {
     display: grid;
-    grid-template-rows: auto;
-    background: #2b3137;
-    color: hsl(0, 0%, 100%, .6);
+    grid-template-rows: auto; 
 }
-
+.memtopback{
+    height: 30vh;
+    position: relative;
+}
+.memtop-text{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top:6%;
+    left:6%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.memtop-header{
+    display: block;
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+.memtopbackstyle{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
 body {
     overflow-y: scroll !important;
 }
@@ -42,29 +65,86 @@ body {
 }
 
 .dcard {
+    height: 16rem;
     margin: 1.5rem;
     max-width: 13rem;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .8);
+    box-shadow: 0px  1px 2px rgba(0,0,0,.2);
+    transition: all .4s;
+    backface-visibility: hidden;
+    position: relative;
+}
+.hovermaterial{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    height: 0%;
+    width: 100%;
+    transition: all .4s;
+    z-index: 2;
+    background: white;
 }
 
+.dcard:hover .hovermaterial{
+    height: 100%;
+    display: block;
+}
+.dcard:hover .aboutd{
+ top: 10%;
+ align-items: center;
+}
+.dcard:hover .aboutd .dname{
+    padding-bottom: .1rem;
+}
+
+ .dcard:hover{
+    transform: scale(1.05);
+}
+
+.contenthover{
+    padding:0 1rem;
+    width: 100%;
+    position: absolute;
+    top:40%;
+    text-align: center;
+}
+.tagline{
+    display: block;
+    padding-bottom: .4rem;
+}
+.dimg{
+    height: 75%;
+    top: 1%;
+    left: 1%;
+    right: 1%;
+    bottom: 20%;
+    margin:.3rem;
+}
 .dimgstyle {
-    margin: .4rem;
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    border: 4px solid goldenrod;
+    height: 100%;
+    width: 100%;
+   
 }
-
+.aboutd{
+    position: absolute;
+    bottom:0%;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:0 1rem ;
+}
 .dname {
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    font-weight: bold;
-    font-family: 'Comfortaa', cursive;
+   color: black;
+   text-transform: uppercase;
+   letter-spacing: 1.1;
 }
 
 .dskill {
-    font-size: 1rem;
-    padding: 1.5rem;
+    color:#FE7F9C;
+    font-size: .8rem;
 }
 
 .m {
@@ -85,46 +165,4 @@ body {
     letter-spacing: .3rem;
     font-size: 1.2rem;
 
-}
-
-.mcards {
-    display: flex;
-    width: 80%;
-    height: auto;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: wrap;
-}
-
-.mcard {
-    margin: 2rem;
-    background-color: rgba(0, 0, 0, .2);
-    max-width: 13rem;
-
-}
-
-
-.mimgstyle {
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    margin: .4rem;
-    margin-top: .6rem !important;
-    border: 4px solid goldenrod;
-}
-
-.aboutm {}
-
-.mname {
-    text-transform: uppercase;
-}
-
-.mdesignation {
-    text-transform: uppercase;
-}
-
-.mabout {
-    max-width: 13rem;
-    text-align: center;
-    padding: .4rem;
 }
