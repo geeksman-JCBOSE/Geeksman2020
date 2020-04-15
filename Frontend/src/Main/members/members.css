@@ -137,6 +137,11 @@ body {
     align-items: flex-start;
     padding:0 1rem ;
 }
+.dcard:hover .aboutd{
+    top:10%;
+    left: 50%;
+    transform:translateX(-23%);
+}
 .dname {
    color: black;
    text-transform: uppercase;

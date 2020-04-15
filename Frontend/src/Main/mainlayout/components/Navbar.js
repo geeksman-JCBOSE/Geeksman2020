@@ -28,8 +28,6 @@ class Navbar extends React.Component {
     const nav2=document.querySelector('.nav')
     let navheight=nav2.getBoundingClientRect();
     nav.style.top=`${navheight.height-20}`+'px';
-  
-
   }
 
     render() {
@@ -40,15 +38,17 @@ class Navbar extends React.Component {
         <img src={image} className="nav-logo"/>
          </div>
          <ul className="nav-links">
-       
            <li><Link to="/">home</Link></li>
-           <li><Link to="/members">our team</Link></li>
            <li><Link to="/events">events</Link></li>
+           <li><Link to="/members">members</Link></li>
          </ul>
          <div className="burger" onClick={this.handleclick}>
            <div className="line1"></div>
            <div className="line2"></div>
            <div className="line3"></div>
+         </div>
+         <div className="loginbtn">
+           <Link to='#'>Login</Link>
          </div>
   </div>
       </div>

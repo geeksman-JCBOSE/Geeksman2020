@@ -6,10 +6,19 @@
     color:black;
     background-color:white;
     border-top:2px solid blue;
-
-
 }
-
+.loginbtn{
+    position: absolute;
+    right: 6%;
+    top: 3%;
+}
+.loginbtn a{
+    text-decoration: none;
+    color: black;
+    background: orange;
+    border-radius: 100px;
+    padding: .4rem 1.3rem;
+}
 html {
     overflow: hidden;
 }
@@ -29,8 +38,9 @@ body {
 
 .nav-logo {
     margin-left: 3rem;
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
+    margin-top: .4rem;
     border-radius: 50%;
 }
 
@@ -45,6 +55,7 @@ body {
 
 .nav-links li {
     list-style: none;
+    
 }
 
 .nav-links a {
@@ -53,6 +64,7 @@ body {
     letter-spacing: 2px;
     text-decoration: none;
     font-size: .8rem;
+    padding:.8rem;
     font-family: 'Major Mono Display', monospace;
 }
 
@@ -108,8 +120,4 @@ body {
     margin-block-start: .4rem;
     padding-inline-start: 6px;
 }
-@media only screen and (min-width:0px) and (max-width:800px){
-.burger{
-    margin-left: 20rem;
-}
-}
+
