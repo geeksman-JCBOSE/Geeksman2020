@@ -1,3 +1,4 @@
+
 .nav {
     display: flex;
     justify-content: flex-start;
@@ -14,7 +15,7 @@
 }
 .loginbtn a{
     text-decoration: none;
-    color: black;
+    color: white;
     background: orange;
     border-radius: 100px;
     padding: .4rem 1.3rem;
@@ -82,7 +83,7 @@ body {
 }
 
 .nav-active {
-    transform: translateX(0);
+    transform: translateX(0)!important;
 }
 
 @keyframes navLinkFade {
@@ -121,3 +122,34 @@ body {
     padding-inline-start: 6px;
 }
 
+@media  screen  and (max-width:902px){
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        display: flex;
+        height: 92vh;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        background-color: #24292e;
+      }
+     
+      .loginbtn{
+        right: 19%;
+        top:5.5%;
+    }
+      
+  .nav-links li {
+    z-index: 4;
+    opacity: 0;
+  }
+  
+    .burger {
+        display: block;
+        position: absolute;
+        right: 8%;
+    }
+  }
