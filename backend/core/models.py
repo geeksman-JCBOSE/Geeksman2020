@@ -27,6 +27,7 @@ class Member(models.Model):
     gfg = models.URLField(max_length=1000)
     codechef = models.URLField(max_length=1000)
     skills = models.ManyToManyField(Skill)
+    status = models.CharField(max_length=1000, null=True)
 
     class Meta:
         verbose_name_plural = 'Members'
@@ -42,6 +43,11 @@ class Event(models.Model):
     details = models.TextField()
     entry_fee = models.PositiveSmallIntegerField()
     venue = models.CharField(max_length=500, default=None)
+    status_choices = (
+        ('Upcoming', 'Upcoming'),
+        ('Happened', 'Happened'),
+    )
+    status = models.CharField(choices=status_choices, max_length=100, default='Upcoming')
 
     class Meta:
         verbose_name_plural = 'Events'
