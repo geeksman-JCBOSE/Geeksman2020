@@ -16,8 +16,6 @@ class Footer extends React.Component {
     return (
     
         <div className="footer">
-        
-        
         <footer className="footer">
         <div className="footer__addr">
 

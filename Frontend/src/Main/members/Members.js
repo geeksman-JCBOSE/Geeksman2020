@@ -102,13 +102,11 @@ class Members extends React.Component {
                        <span className='dskill'>Tagline</span>
                    </div>
                    <div className="hovermaterial">
-                   <div className='aboutd'>
-                       <span className='dname'>Name</span>
-                       <div className='dskill'>tagline</div>
-                   </div>
-                   <div className="contenthover">
-                      <span className="year">year</span>
-                      <div className="description">description
+                   <div className="memberrelativwrapper">
+                   <div className='membersname'>Name</div>
+                       <div className='membersline'>tagline</div>
+                       <div className="year">year</div>
+                      <div className="description">about 
                       </div>
                       <div className="address">address</div>
                       <div className="icons">
@@ -117,13 +115,12 @@ class Members extends React.Component {
                       <Link to="#" ><i className=""></i></Link>
                       </div>
                    </div>
+                      
+                       </div>
+                   </div>
                    </div>
               </div>
-              </div>
-            </div>
-
-
-           
+          
 
           </div>
         </div>

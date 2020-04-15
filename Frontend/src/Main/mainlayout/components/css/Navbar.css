@@ -1,17 +1,13 @@
 .nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    min-height: 4vh;
-    color: white;
-    background-color: #24292e;
+    min-height:3vh;
+    color:black;
+    background-color:white;
+    border-top:2px solid blue;
 
 
-}
-
-.logo {
-    display: flex;
-    align-items: center;
 }
 
 html {
@@ -32,6 +28,7 @@ body {
 }
 
 .nav-logo {
+    margin-left: 3rem;
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
@@ -40,8 +37,9 @@ body {
 .nav-links {
     display: flex;
     width: 40%;
+    align-items: center;
     justify-content: space-around;
-    margin-left: 20rem;
+    margin-left: .4rem;
 
 }
 
@@ -50,7 +48,8 @@ body {
 }
 
 .nav-links a {
-    color: white;
+    color:black;
+    font-weight: bold;
     letter-spacing: 2px;
     text-decoration: none;
     font-size: .8rem;
@@ -59,13 +58,14 @@ body {
 
 .burger {
     display: none;
+    margin-left: 4rem;
 }
 
 .burger div {
     transition: all .3s;
     width: 1.8rem;
     height: .3rem;
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(0, 0, 0);
     margin: .3rem;
 }
 
@@ -103,4 +103,13 @@ body {
     font-size: 70px;
     color: black;
     letter-spacing: .5rem;
+}
+.nav ul{
+    margin-block-start: .4rem;
+    padding-inline-start: 6px;
+}
+@media only screen and (min-width:0px) and (max-width:800px){
+.burger{
+    margin-left: 20rem;
+}
 }

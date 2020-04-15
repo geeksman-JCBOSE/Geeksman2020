@@ -78,26 +78,26 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-display: none; 
+    display: none;  
     height: 0%;
     width: 100%;
     transition: all .4s;
     z-index: 2;
     background: white;
+    
 }
 
+.dcard:hover .memberrelativwrapper{
+    display: block;
+    height: 100%;
+}
 .dcard:hover .hovermaterial{
     height: 100%;
     display: block;
 }
-.dcard:hover .aboutd{
- top: 10%;
- align-items: center;
-}
-.dcard:hover .aboutd .dname{
-    padding-bottom: .1rem;
-}
 
+
+ 
  .dcard:hover{
     transform: scale(1.05);
 }
@@ -108,6 +108,7 @@ display: none;
     position: absolute;
     top:40%;
     text-align: center;
+    height: fit-content;
 }
 .tagline{
     display: block;
@@ -166,24 +167,50 @@ display: none;
     font-size: 1.2rem;
 
 }
-.year{
-    display: block;
-    padding-bottom: .4rem;
-    }
+
     .description{
-   
-    padding-bottom: .4rem;
+    overflow-wrap: break-word;
+    padding:.8rem .2rem .6rem .6rem;
     }
     .address{
    
     padding-bottom: .4rem;
     }
     .icons{
-
+        position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
    
 
     }
     .icons i{
         color:#FE7F9C;
         padding-right: .2rem;
+    }
+    .memberrelativwrapper{
+        width:208px;
+        height: 256px;
+    }  
+  .membersname{
+        padding-bottom: .4rem;
+  }   
+  .membersline{
+        padding-bottom: .2rem;
+  }
+  .memberrelativwrapper{
+      width:208px;
+      display: none;
+      height: 256px;
+      height: 0%;
+      transition: all .3s;
+  }   
+  .year{
+       padding-bottom: .2rem;
+   }
+   .address{
+   position: absolute;
+    bottom: 16%;
+    left: 50%;
+    transform: translateX(-50%);
     }

@@ -36,13 +36,12 @@ class Navbar extends React.Component {
     return (
       <div className="navbar">
  <div className="nav">
-         <div className="logo">
+           <div className="logo">
         <img src={image} className="nav-logo"/>
-        <h4 className="whygeek">why geeksman?</h4>
          </div>
          <ul className="nav-links">
+       
            <li><Link to="/">home</Link></li>
-           <li><Link to="#">contact us</Link></li>
            <li><Link to="/members">our team</Link></li>
            <li><Link to="/events">events</Link></li>
          </ul>
