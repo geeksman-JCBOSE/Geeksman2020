@@ -20,19 +20,24 @@ class About extends React.Component {
         <ul className="about-linksf hidemob">
            <li className="firstli"><i class="fa fa-address-book"></i></li>
            <li className="secondli1"><i class="fa fa-calendar-times-o"></i></li>
-           <li className="thirdli"><i class="fa fa-snowflake-o"></i></li>
+           <li className="thirdli"><i class="fab fa-python"></i></li>
+           <li className="fourthli"><i class="fas fa-video"></i></li>
          </ul>
+         <div className="blockline">
+            <blockquote>Geeksman is a perfect blend of hardworking and focussed humans</blockquote>
+         </div>
         <ul className="about-linksf">
-           <li className="firstli2 hidemob"><i class="fa fa-handshake-o"></i></li>
+           <li className="firstli2 hidemob"><i class="fab fa-html5"></i></li>
            <li className="secondli2"><div className="button_cont" align="center"><Link className="example_b2" to="./members"  rel="nofollow noopener">our team</Link>
         </div></li>
-           <li className="thirdli2 hidemob"><i class="fa fa-anchor"></i></li>
+           <li className="thirdli2 hidemob"><i class="fab fa-css3-alt"></i></li>
          </ul>
         
         <ul className="about-linksf hidemob">
-           <li className="firstli"><i class="fa fa-gift"></i></li>
-           <li className="secondli"><i class="fa fa-cogs"></i></li>
+           <li className="firstli"><i class="fab fa-react"></i></li>
+           <li className="secondli"><i class="fab fa-node-js"></i></li>
            <li className="thirdli"><i class="fa fa-code"></i></li>
+           <li className="fourthli"><i class="fab fa-angular"></i></li>
          </ul>
         </div>
         </div>

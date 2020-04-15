@@ -16,7 +16,6 @@
     display: inline-block;
     border: 1.5px solid rgb(201, 115, 36);
     transition: all 0.4s ease 0s;
-
 }
 
 .example_bcode {
@@ -72,7 +71,8 @@
 .about-linksf {
     display: flex;
     width: 100%;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .about-linksf i {
@@ -82,33 +82,36 @@
 }
 
 .firstli {
-    margin-left: 7rem;
+    margin-left: 4rem;
 }
 
 .secondli {
-    margin-left: 27.5rem;
+    margin-left: 12rem;
 }
 
 .secondli1 {
-    margin-left: 27.9rem;
+    margin-left:12rem;
 }
 
 .thirdli {
-    margin-left: 27rem;
-    margin-right: 7rem;
+    margin-left: 12rem;
+    
+}
+.fourthli{
+    margin-left: 12rem;
 }
 
 .firstli2 {
-    margin-left: 20rem;
+    margin-left: 10rem;
     margin-top: 0.7rem;
 }
 
 .secondli2 {
-    margin-left: 11rem;
+    margin-left: 9rem;
 }
 
 .thirdli2 {
-    margin-left: 11rem;
+    margin-left: 9rem;
     margin-top: 0.7rem;
 }
 
@@ -116,7 +119,7 @@
 
 @media only screen and (min-width:300px) and (max-width:940px) {
     .hidemob {
-        display: none;
+        /* display: none; */
     }
 
     .row2 {
@@ -258,4 +261,9 @@
         margin-left: 0rem;
         margin-right: 0rem;
     }
+}
+.blockline blockquote{
+    color: white;
+    margin: 3rem 0rem;
+    
 }

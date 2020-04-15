@@ -99,7 +99,7 @@ body {
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-9px, 6px)
+    transform: rotate(-45deg) translate(-7px, 7px)
 }
 
 .toggle .line2 {
@@ -107,7 +107,7 @@ body {
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-9px, -6px)
+    transform: rotate(45deg) translate(-7px, -7px)
 }
 
 .heading {
@@ -134,7 +134,8 @@ body {
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
-        background-color: #24292e;
+        background-color:white;
+        z-index: 4;
       }
      
       .loginbtn{

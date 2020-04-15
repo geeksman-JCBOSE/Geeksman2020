@@ -27,7 +27,7 @@ class Navbar extends React.Component {
     })
     const nav2=document.querySelector('.nav')
     let navheight=nav2.getBoundingClientRect();
-    nav.style.top=`${navheight.height}`+'px';
+    nav.style.top=`${navheight.height-5}`+'px';
   }
 
     render() {
