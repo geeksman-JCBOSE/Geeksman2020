@@ -33,7 +33,7 @@ class MembersAPIViewSet(viewsets.ModelViewSet):
 
 
 class EventAPIViewSet(viewsets.ModelViewSet):
-    serializer_class = serializers.UserSerializer
+    serializer_class = serializers.EventsSerializer
     queryset = User.objects.all()
 
     def get_permissions(self):
