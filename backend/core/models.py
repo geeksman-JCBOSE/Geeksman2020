@@ -22,10 +22,8 @@ class Member(models.Model):
     address = models.CharField(max_length=1000, default=None)
     description = models.TextField(default=None)
     phone_number = models.BigIntegerField(default=None)
-    github = models.URLField(max_length=1000)
-    linkedin = models.URLField(max_length=1000)
-    gfg = models.URLField(max_length=1000)
-    codechef = models.URLField(max_length=1000)
+    github = models.URLField(max_length=1000, null=True, blank=True)
+    linkedin = models.URLField(max_length=1000, null=True, blank=True)
     skills = models.ManyToManyField(Skill)
     status = models.CharField(max_length=1000, null=True)
 
