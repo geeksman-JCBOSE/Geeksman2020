@@ -57,7 +57,7 @@ class Navbar extends React.Component {
           <div className="loginbtn">
             <Link to="#">Login</Link>
           </div>
-          <div className="socialicons">
+          <div className="socialicons hidemobile">
             <Link to="#">
               <i class="fab fa-instagram social"></i>
             </Link>
