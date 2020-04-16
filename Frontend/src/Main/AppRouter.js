@@ -10,10 +10,10 @@ function AppRouter() {
     <Router>
       <Switch>
         <div className="AppRouter">
-          <Route path="/" exact exact component={MainLayout} />
-          <Route path="/members" exact exact component={Members} />
-          <Route path="/events" exact exact component={Events} />
-          <Route path="/userpanel" exact exact component={UserPanel} />
+          <Route path="/" exact component={MainLayout} />
+          <Route path="/members" exact component={Members} />
+          <Route path="/events" exact component={Events} />
+          <Route path="/userpanel" exact component={UserPanel} />
         </div>
       </Switch>
     </Router>
