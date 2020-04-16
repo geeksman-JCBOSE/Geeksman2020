@@ -1,10 +1,10 @@
-.md {
-  display: grid;
-  grid-template-rows: auto;
-}
 .memtopback {
   height: 18vh;
   position: relative;
+  width: 100%;
+}
+.margincard {
+  margin-left: 2rem;
 }
 .memtop-text {
   position: absolute;
@@ -33,21 +33,9 @@ body {
   overflow-y: scroll !important;
 }
 
-.d {
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.dh {
-  margin: 1rem;
-}
-
 .dcards {
   display: flex;
-  width: 80%;
+  width: 100%;
   height: auto;
   justify-content: space-around;
   align-items: center;
@@ -55,9 +43,9 @@ body {
 }
 
 .dcard {
-  height: 19rem;
-  margin: 1.5rem;
-  max-width: 16rem;
+  height: 20rem;
+  margin-top: 2.3rem;
+  max-width: 18rem;
   background-color: rgba(248, 248, 248, 0.8);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   transition: all 0.4s;
@@ -200,4 +188,9 @@ body {
   bottom: 16%;
   left: 50%;
   transform: translateX(-50%);
+}
+@media only screen and (max-width: 500px) {
+  .margincard {
+    margin-left: 0rem;
+  }
 }

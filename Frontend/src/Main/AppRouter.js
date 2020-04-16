@@ -1,22 +1,23 @@
 import React from "react";
-import MainLayout from "./mainlayout/MainLayout";
-import Members from "./members/Members";
-import Events from "./events/Events";
-
+import MainLayout from "./components/mainlayout/mainlayout";
+import Members from "./components/members/members";
+import Events from "./components/events/events";
+import UserPanel from "./components/userpanel/userpanel";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function AppRouter() {
-   return ( 
+  return (
     <Router>
       <Switch>
         <div className="AppRouter">
           <Route path="/" exact exact component={MainLayout} />
           <Route path="/members" exact exact component={Members} />
           <Route path="/events" exact exact component={Events} />
+          <Route path="/userpanel" exact exact component={UserPanel} />
         </div>
       </Switch>
     </Router>
-);
+  );
 }
 
 export default AppRouter;

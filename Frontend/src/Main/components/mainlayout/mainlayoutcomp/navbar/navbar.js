@@ -1,10 +1,10 @@
 import React from "react";
-import "./css/Navbar.css";
-import image from "./icons/logo.png";
-import Loginform from "./loginform";
+import "./navbar.css";
+import LoginForm from "./loginform/loginform";
 import { Link, Navlink } from "react-router-dom";
-
+import image from "./icons/logo.png";
 class Navbar extends React.Component {
+  componentDidMount() {}
   handleclick = () => {
     const navLinks = document.querySelectorAll(".nav-links li");
     const burger = document.querySelector(".burger");
@@ -26,10 +26,9 @@ class Navbar extends React.Component {
     let navheight = nav2.getBoundingClientRect();
     nav.style.top = `${navheight.height - 5}` + "px";
   };
-
   render() {
     return (
-      <div className="navbar">
+      <div>
         <div className="nav">
           <div className="logo">
             <img src={image} className="nav-logo" />
@@ -63,7 +62,7 @@ class Navbar extends React.Component {
             <div className="line3"></div>
           </div>
           <div>
-            <Loginform />
+            <LoginForm />
           </div>
 
           <div className="socialicons hidemobile">
