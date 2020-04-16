@@ -7,6 +7,9 @@
   background-image: linear-gradient(to right, #5d4fff, #4866e8);
   border-top: 4px solid #48b8e8;
 }
+.hidepc {
+  display: none;
+}
 .socialicons {
   position: absolute;
   right: 9%;
@@ -47,9 +50,9 @@ body {
 
 .nav-logo {
   margin-left: 3rem;
-  height: 3rem;
+  height: 2.7rem;
   width: 3rem;
-  margin-top: rem;
+  margin-top: 0.2rem;
   border-radius: 50%;
 }
 
@@ -135,10 +138,10 @@ body {
     height: 92vh;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
-    background-image: linear-gradient(to right, #5d4fff, #4866e8);
+    background-image: url("../icons/navbarbackground.jpg");
     z-index: 4;
   }
 
@@ -148,8 +151,12 @@ body {
   }
 
   .nav-links li {
-    z-index: 4;
+    z-index: 5;
     opacity: 0;
+  }
+  .nav-links a {
+    color: black;
+    font-size: 1.3rem;
   }
 
   .burger {
@@ -159,5 +166,23 @@ body {
   }
   .hidemobile {
     display: none;
+  }
+
+  .social {
+    width: 5rem;
+    color: black;
+  }
+  .sociallist {
+    background-color: black;
+  }
+  .hidepc {
+    display: inline-block;
+  }
+  .nav-logo {
+    margin-left: 1.5rem;
+    height: 2.7rem;
+    width: 3rem;
+    margin-top: 0.2rem;
+    border-radius: 50%;
   }
 }
