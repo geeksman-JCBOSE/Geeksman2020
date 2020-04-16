@@ -1,11 +1,10 @@
 import React from "react";
-import ReactDom from "react-dom";
 import "./css/Navbar.css";
 import image from "./icons/logo.png";
+import Loginform from "./loginform";
 import { Link, Navlink } from "react-router-dom";
-class Navbar extends React.Component {
-  componentDidMount() {}
 
+class Navbar extends React.Component {
   handleclick = () => {
     const navLinks = document.querySelectorAll(".nav-links li");
     const burger = document.querySelector(".burger");
@@ -46,14 +45,16 @@ class Navbar extends React.Component {
               <Link to="/members">members</Link>
             </li>
             <li>
-              <Link to="/members">contact</Link>
+              <Link to="/">contact</Link>
             </li>
             <li>
-              <Link to="/">
-                <i href="" class="fab fa-instagram social hidepc"></i>
-                <i href="" class="fab fa-github social hidepc"></i>
-                <i href="" class="fab fa-facebook social hidepc"></i>
-              </Link>
+              <a href="https://www.instagram.com/geeksmanymca/">
+                <i class="fab fa-instagram social hidepc"></i>
+              </a>
+              <a href="https://github.com/aayushme">
+                <i class="fab fa-github social hidepc"></i>
+              </a>
+              <i class="fab fa-facebook social hidepc"></i>
             </li>
           </ul>
           <div className="burger" onClick={this.handleclick}>
@@ -61,9 +62,10 @@ class Navbar extends React.Component {
             <div className="line2"></div>
             <div className="line3"></div>
           </div>
-          <div className="loginbtn">
-            <Link to="#">Login</Link>
+          <div>
+            <Loginform />
           </div>
+
           <div className="socialicons hidemobile">
             <Link to="#">
               <i class="fab fa-instagram social"></i>
