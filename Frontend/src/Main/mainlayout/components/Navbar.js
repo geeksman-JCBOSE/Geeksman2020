@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 import "./css/Navbar.css";
-import image from "./icons/logo3.png";
+import image from "./icons/logo.png";
 import { Link, Navlink } from "react-router-dom";
 class Navbar extends React.Component {
   componentDidMount() {}
@@ -49,10 +49,10 @@ class Navbar extends React.Component {
               <Link to="/members">contact</Link>
             </li>
             <li>
-              <Link to="/members">
-                <i class="fab fa-instagram social hidepc"></i>
-                <i class="fab fa-github social hidepc"></i>
-                <i class="fab fa-facebook social hidepc"></i>
+              <Link to="/">
+                <i href="" class="fab fa-instagram social hidepc"></i>
+                <i href="" class="fab fa-github social hidepc"></i>
+                <i href="" class="fab fa-facebook social hidepc"></i>
               </Link>
             </li>
           </ul>

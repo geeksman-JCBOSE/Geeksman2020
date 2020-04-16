@@ -1,221 +1,203 @@
 .md {
-    display: grid;
-    grid-template-rows: auto; 
+  display: grid;
+  grid-template-rows: auto;
 }
-.memtopback{
-    height: 30vh;
-    position: relative;
+.memtopback {
+  height: 18vh;
+  position: relative;
 }
-.memtop-text{
-    position: absolute;
-    z-index: 1;
-    color: white;
-    top:6%;
-    left:6%;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+.memtop-text {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: 6%;
+  left: 6%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
-.memtop-header{
-    display: block;
-    font-size: 2.2rem;
-    margin-top: 1rem;
+.memtop-header {
+  display: block;
+  font-size: 2.2rem;
+  margin-top: 1rem;
+  font-weight: 700;
 }
-.memtopbackstyle{
-    position:absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
+.memtopbackstyle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 body {
-    overflow-y: scroll !important;
+  overflow-y: scroll !important;
 }
 
 .d {
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-.hr1 {
-    width: 90%;
-    margin-top: -.8rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .dh {
-
-    text-transform: uppercase;
-    letter-spacing: .3rem;
-    box-sizing: content-box;
-    margin: 1.5rem;
-    font-size: 1.2rem;
+  margin: 1rem;
 }
 
 .dcards {
-    display: flex;
-    width: 80%;
-    height: auto;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: wrap;
+  display: flex;
+  width: 80%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: wrap;
 }
 
 .dcard {
-    height: 16rem;
-    margin: 1.5rem;
-    max-width: 13rem;
-    background-color: rgba(255, 255, 255, .8);
-    box-shadow: 0px  1px 2px rgba(0,0,0,.2);
-    transition: all .4s;
-    backface-visibility: hidden;
-    position: relative;
+  height: 19rem;
+  margin: 1.5rem;
+  max-width: 16rem;
+  background-color: rgba(248, 248, 248, 0.8);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+  backface-visibility: hidden;
+  position: relative;
 }
-.hovermaterial{
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: none;  
-    height: 0%;
-    width: 100%;
-    transition: all .4s;
-    z-index: 2;
-    background: white;
-    
-}
-
-.dcard:hover .memberrelativwrapper{
-    display: block;
-    height: 100%;
-}
-.dcard:hover .hovermaterial{
-    height: 100%;
-    display: block;
+.hovermaterial {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  height: 0%;
+  width: 100%;
+  transition: all 0.4s;
+  z-index: 2;
+  background: white;
 }
 
-
- 
- .dcard:hover{
-    transform: scale(1.05);
+.dcard:hover .memberrelativwrapper {
+  display: block;
+  height: 100%;
+}
+.dcard:hover .hovermaterial {
+  height: 100%;
+  display: block;
 }
 
-.contenthover{
-    padding:0 1rem;
-    width: 100%;
-    position: absolute;
-    top:40%;
-    text-align: center;
-    height: fit-content;
+.dcard:hover {
+  transform: scale(1.05);
 }
-.tagline{
-    display: block;
-    padding-bottom: .4rem;
+
+.contenthover {
+  padding: 0 1rem;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  height: fit-content;
 }
-.dimg{
-    height: 75%;
-    top: 1%;
-    left: 1%;
-    right: 1%;
-    bottom: 20%;
-    margin:.3rem;
+.tagline {
+  display: block;
+  padding-bottom: 0.4rem;
+}
+.dimg {
+  height: 76%;
+  top: 1%;
+  left: 1%;
+  right: 1%;
+  bottom: 20%;
+  margin: 0.2rem;
 }
 .dimgstyle {
-    height: 100%;
-    width: 100%;
-   
+  height: 100%;
+  width: 100%;
 }
-.aboutd{
-    position: absolute;
-    bottom:0%;
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding:0 1rem ;
+.aboutd {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 1rem;
 }
-.dcard:hover .aboutd{
-    top:10%;
-    left: 50%;
-    transform:translateX(-23%);
+.dcard:hover .aboutd {
+  top: 10%;
+  left: 50%;
+  transform: translateX(-23%);
 }
 .dname {
-   color: black;
-   text-transform: uppercase;
-   letter-spacing: 1.1;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1.1;
 }
 
 .dskill {
-    color:#FE7F9C;
-    font-size: .8rem;
+  color: #fe7f9c;
+  font-size: 0.8rem;
 }
 
 .m {
-    display: flex;
-    height: fit-content;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .dimg {
-    margin: .6rem;
+  margin: 0.6rem;
 }
 
 .mh {
-    padding: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .3rem;
-    font-size: 1.2rem;
-
+  padding: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 1.2rem;
 }
 
-    .description{
-    overflow-wrap: break-word;
-    padding:.8rem .2rem .6rem .6rem;
-    }
-    .address{
-   
-    padding-bottom: .4rem;
-    }
-    .icons{
-        position: absolute;
-    bottom: 2%;
-    left: 50%;
-    transform: translateX(-50%);
-   
-
-    }
-    .icons i{
-        color:#FE7F9C;
-        padding-right: .2rem;
-    }
-    .memberrelativwrapper{
-        width:208px;
-        height: 256px;
-    }  
-  .membersname{
-        padding-bottom: .4rem;
-  }   
-  .membersline{
-        padding-bottom: .2rem;
-  }
-  .memberrelativwrapper{
-      width:208px;
-      display: none;
-      height: 256px;
-      height: 0%;
-      transition: all .3s;
-  }   
-  .year{
-       padding-bottom: .2rem;
-   }
-   .address{
-   position: absolute;
-    bottom: 16%;
-    left: 50%;
-    transform: translateX(-50%);
-    }
+.description {
+  overflow-wrap: break-word;
+  padding: 0.8rem 0.2rem 0.6rem 0.6rem;
+}
+.address {
+  padding-bottom: 0.4rem;
+}
+.icons {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icons i {
+  color: #fe7f9c;
+  padding-right: 0.2rem;
+}
+.memberrelativwrapper {
+  width: 208px;
+  height: 256px;
+}
+.membersname {
+  padding-bottom: 0.4rem;
+}
+.membersline {
+  padding-bottom: 0.2rem;
+}
+.memberrelativwrapper {
+  width: 208px;
+  display: none;
+  height: 256px;
+  height: 0%;
+  transition: all 0.3s;
+}
+.year {
+  padding-bottom: 0.2rem;
+}
+.address {
+  position: absolute;
+  bottom: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+}
