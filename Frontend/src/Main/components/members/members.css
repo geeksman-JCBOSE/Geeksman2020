@@ -4,7 +4,11 @@
   width: 100%;
 }
 .margincard {
-  margin-left: 2rem;
+  padding-left: 6rem;
+  margin-top: 1rem;
+}
+.margincardmembers {
+  padding-left: 50px;
 }
 .memtop-text {
   position: absolute;
@@ -33,21 +37,22 @@ body {
   overflow-y: scroll !important;
 }
 
-.dcards {
-  display: flex;
-  width: 100%;
-  height: auto;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: wrap;
-}
-
 .dcard {
+  height: 22rem;
+  margin-top: 2.3rem;
+  max-width: 20rem;
+  background-color: rgba(248, 248, 248, 0.8);
+  box-shadow: 1px 2px 3px rgba(39, 87, 141, 0.2);
+  transition: all 0.4s;
+  backface-visibility: hidden;
+  position: relative;
+}
+.dmcard {
   height: 20rem;
   margin-top: 2.3rem;
   max-width: 18rem;
   background-color: rgba(248, 248, 248, 0.8);
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 3px rgba(39, 87, 141, 0.2);
   transition: all 0.4s;
   backface-visibility: hidden;
   position: relative;
@@ -61,19 +66,35 @@ body {
   width: 100%;
   transition: all 0.4s;
   z-index: 2;
-  background: white;
+  background: rgb(252, 250, 250);
 }
 
 .dcard:hover .memberrelativwrapper {
   display: block;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .dcard:hover .hovermaterial {
   height: 100%;
   display: block;
 }
 
-.dcard:hover {
+.dmcard:hover {
+  transform: scale(1.05);
+}
+.dmcard:hover .memberrelativwrapper {
+  display: block;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dmcard:hover .hovermaterial {
+  height: 100%;
+  display: block;
+}
+
+.dmdcard:hover {
   transform: scale(1.05);
 }
 
@@ -89,13 +110,34 @@ body {
   display: block;
   padding-bottom: 0.4rem;
 }
+.position {
+  background-color: goldenrod;
+  font-size: 1rem;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: -0.7rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  color: white;
+}
+.mposition {
+  background-color: #5d4fff;
+  font-size: 1rem;
+  margin-left: 3.4%;
+  margin-right: 3.4%;
+  margin-top: -0.7rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  color: white;
+}
 .dimg {
   height: 76%;
   top: 1%;
   left: 1%;
   right: 1%;
   bottom: 20%;
-  margin: 0.2rem;
 }
 .dimgstyle {
   height: 100%;
@@ -120,6 +162,8 @@ body {
   color: black;
   text-transform: uppercase;
   letter-spacing: 1.1;
+  font-weight: 600;
+  margin-top: 0.8rem;
 }
 
 .dskill {
@@ -159,6 +203,13 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+.dimagestyleflip {
+  height: 50px;
+  width: 50px;
+  border: 1px solid rgb(238, 192, 40);
+  border-radius: 50%;
+  margin-top: 1rem;
+}
 .icons i {
   color: #fe7f9c;
   padding-right: 0.2rem;
@@ -168,10 +219,15 @@ body {
   height: 256px;
 }
 .membersname {
-  padding-bottom: 0.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 0rem;
+  font-size: 1.3rem;
 }
 .membersline {
-  padding-bottom: 0.2rem;
+  color: #fe7f9c;
+  font-size: 0.8rem;
+  margin-top: -0.1rem;
 }
 .memberrelativwrapper {
   width: 208px;
@@ -182,15 +238,22 @@ body {
 }
 .year {
   padding-bottom: 0.2rem;
+  margin-top: -0.2rem;
+  font-size: 0.7rem;
+  color: gray;
 }
 .address {
   position: absolute;
-  bottom: 16%;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 1rem;
+  color: gray;
 }
 @media only screen and (max-width: 500px) {
   .margincard {
-    margin-left: 0rem;
+    margin-left: -2.6rem;
+  }
+  .margincardmembers {
   }
 }
