@@ -100,7 +100,10 @@ body {
   font-size: 0.85rem;
   font-family: "Major Mono Display", monospace;
 }
-
+.loginbtn a:hover {
+  text-decoration: none;
+  color: gold;
+}
 .burger {
   display: none;
   margin-left: 1rem;
