@@ -1,63 +1,64 @@
-.about{
-    width: 100%;
-    background:linear-gradient(to right,#00d2ff,#928DAB);
+.about {
+  width: 100%;
+  background: linear-gradient(to right, #00d2ff, #928dab);
 }
-.aboutopborder{
-    height: 6px;
-    width: 100%;
-    background: linear-gradient(to right,#0B486B,#F56217);
+.aboutopborder {
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(to right, #0b486b, #f56217);
 }
-.firstlist{
-    list-style: none;
-    margin-block-start: 0;
-    padding-inline-start: 0;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    font-size: 1.8rem;
-    margin-top: .8rem;
+.firstlist {
+  list-style: none;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  font-size: 1.8rem;
+  margin-top: 0.8rem;
 }
-.secondlist{
-    padding: 1rem 0rem;
+.secondlist {
+  padding: 1rem 0rem;
 }
-.thirdlist{
-    padding-inline-start: 0;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin-bottom: 1rem;
-    font-size: 1.7rem;
+.thirdlist {
+  padding-inline-start: 0;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
 }
-.secondlistbtn{
-    display: inline-block;
-    padding: .8rem 1rem;
-    background:linear-gradient(to right,#4866E8,#48BAE8);
-    border-radius: 100px;  
+.secondlistbtn {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  background: linear-gradient(to right, #4866e8, #48bae8);
+  border-radius: 100px;
 }
-.secondlistbtn a:active,a:link,a{
-    text-decoration: none;
-    color: black!important;
-    position: relative;
-    overflow: hidden;
+.secondlistbtn a:active,
+a:link,
+a {
+  text-decoration: none;
+
+  overflow: hidden;
 }
-h6{
-    position: absolute;
-    background: darkblue;
-    transform:translate(-50%,-50%);
-    pointer-events: none;
-    border-radius:50%;
-    animation: animate 1s linear infinite;
+h6 {
+  position: absolute;
+  background: darkblue;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: animate 1s linear infinite;
 }
-@keyframes animate{
-    0%{
-        width: 0;
-        height: 0;
-        opacity: .4;
-    }
-    100%{
-        width: 500px;
-        height: 500px;
-        opacity: 0;
-    }
+@keyframes animate {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.4;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
 }

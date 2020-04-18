@@ -175,8 +175,9 @@ class Members extends React.Component {
             </span>
           </div>
         </div>
-
-        <div class="row" id="Jsecdetails"></div>
+        <div className="jumbotron">
+          <div className="row" id="Jsecdetails"></div>
+        </div>
       </div>
     );
   }

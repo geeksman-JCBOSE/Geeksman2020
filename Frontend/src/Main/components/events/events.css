@@ -1,0 +1,199 @@
+.eventstop {
+  height: 10rem;
+  position: relative;
+}
+.eventstopstyle {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.bold {
+  font-weight: 650;
+}
+.redtext {
+  color: #fe7f9c;
+}
+.eventmessage {
+  position: absolute;
+  bottom: 25%;
+  left: 6%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+.eventheader {
+  font-size: 3.4rem;
+  letter-spacing: 0.2rem;
+  display: block;
+  font-weight: 700;
+}
+.eventtag {
+  font-size: 1.3rem;
+  margin-top: -0.7rem;
+}
+.eventscards {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  height: fit-content;
+}
+
+.upcomingcards {
+  height: auto;
+}
+.pastcards {
+  height: auto;
+}
+.ucardsblock {
+  display: flex;
+  flex-flow: wrap;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+.upcomingheading {
+  font-size: 1.4rem;
+}
+.uimgblock {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 55%;
+  width: 100%;
+}
+.uimgstyle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 8px solid rgb(52, 230, 132);
+}
+.puimgstyle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 8px solid rgb(233, 88, 51);
+}
+.ucontent {
+  position: absolute;
+  left: 0;
+  top: 56%;
+  width: 100%;
+  text-align: left;
+  margin-left: 0.7rem;
+}
+.description {
+  font-size: 0.8rem;
+  margin-top: -1.8rem;
+  margin-left: -0.6rem;
+}
+.date {
+  font-size: 0.8rem;
+  margin-top: -1.5rem;
+}
+
+.venue {
+  font-size: 0.8rem;
+}
+.ucontentbtn {
+  position: absolute;
+  right: 1%;
+  top: 68%;
+  background: #fe7f9c;
+  padding: 0.4rem;
+  padding-left: 2.2rem;
+  padding-right: 1rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%, 0 0);
+}
+.relativewrapper {
+  height: 100%;
+}
+.ucontentbtn a {
+  text-decoration: none;
+  color: white;
+}
+.ucardblock {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  margin: 0.7rem;
+  width: 40rem;
+  height: 20rem;
+  position: relative;
+  border-radius: 1.5%;
+}
+@media only screen and (max-width: 500px) {
+  .ucardblock {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    margin: 0.7rem;
+    width: 100%;
+    height: 23rem;
+    position: relative;
+    border-radius: 1.5%;
+  }
+  .ucardsblock {
+    display: flex;
+    flex-flow: wrap;
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+  }
+  .eventstop {
+    height: 8rem;
+    position: relative;
+  }
+
+  .eventmessage {
+    position: absolute;
+    bottom: 25%;
+    left: 6%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+  }
+  .eventheader {
+    font-size: 2.8rem;
+    letter-spacing: 0.2rem;
+    display: block;
+    font-weight: 700;
+  }
+  .eventtag {
+    font-size: 1rem;
+    margin-top: -0.7rem;
+  }
+  .uimgblock {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 48%;
+    width: 100%;
+  }
+  .ucontent {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: left;
+    margin-left: 0.7rem;
+  }
+  .description {
+    font-size: 0.8rem;
+    margin-top: -1.8rem;
+    margin-left: -0.6rem;
+    padding-right: 1rem;
+  }
+  .ucontentbtn {
+    position: absolute;
+    right: 1%;
+    top: 100%;
+    background: #fe7f9c;
+    padding: 0.4rem;
+    padding-left: 2.2rem;
+    padding-right: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%, 0 0);
+  }
+}

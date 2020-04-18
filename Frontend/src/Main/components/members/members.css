@@ -1,5 +1,5 @@
 .memtopback {
-  height: 18vh;
+  height: 10rem;
   position: relative;
   width: 100%;
 }
@@ -22,9 +22,10 @@
 }
 .memtop-header {
   display: block;
-  font-size: 2.2rem;
-  margin-top: 1rem;
+  font-size: 3.4rem;
+  margin-top: 0.7rem;
   font-weight: 700;
+  margin-bottom: -0.5rem;
 }
 .memtopbackstyle {
   position: absolute;
@@ -255,5 +256,28 @@ body {
     margin-left: -2.6rem;
   }
   .margincardmembers {
+  }
+  .memtopback {
+    height: 8rem;
+    position: relative;
+    width: 100%;
+  }
+
+  .memtop-text {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top: 4%;
+    left: 6%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .memtop-header {
+    display: block;
+    font-size: 2.8rem;
+    margin-top: 0.7rem;
+    font-weight: 700;
+    margin-bottom: -0.5rem;
   }
 }
