@@ -8,6 +8,7 @@ class Skill(models.Model):
 
     class Meta:
         verbose_name_plural = 'Skills'
+        ordering = ['name']
 
     def __str__(self):
         return self.name
@@ -29,6 +30,7 @@ class Member(models.Model):
 
     class Meta:
         verbose_name_plural = 'Members'
+        ordering = ['-year', 'user__first_name']
 
     def __str__(self):
         return self.user.username
@@ -49,6 +51,8 @@ class Event(models.Model):
 
     class Meta:
         verbose_name_plural = 'Events'
+        ordering = ['-date_time']
+
 
     def __str__(self):
         return self.name
@@ -56,11 +60,13 @@ class Event(models.Model):
 
 class Task(models.Model):
     name = models.CharField(max_length=1000)
+    skills = models.ManyToManyField(Skill)
     deadline = models.DateTimeField()
     submit_info = models.TextField()
 
     class Meta:
         verbose_name_plural = 'Tasks'
+        ordering = ['-deadline']
 
     def __str__(self):
         return self.name

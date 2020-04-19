@@ -1,7 +1,6 @@
 from django.contrib.auth.models import User
-from django.shortcuts import render
-from rest_framework.permissions import IsAuthenticated, AllowAny, IsAdminUser
-from rest_framework import viewsets, status
+from rest_framework.permissions import IsAuthenticated, AllowAny, IsAdminUser, IsAuthenticatedOrReadOnly
+from rest_framework import viewsets, status, authentication
 from core import serializers
 from . import models
 
@@ -12,7 +11,7 @@ class UserAPIViewSet(viewsets.ModelViewSet):
 
     def get_permissions(self):
 
-        permission_classes = [AllowAny]
+        permission_classes = [IsAdminUser]
         return [permission() for permission in permission_classes]
 
 
@@ -21,24 +20,26 @@ class MembersAPIViewSet(viewsets.ModelViewSet):
     # queryset = UserProfile.objects.all()
 
     def get_queryset(self):
-        member = models.Member.objects.all()
-        username = self.request.query_params.get('username', None)
-        if username:
-            member = models.Member.objects.filter(user_username=username)
+        id = self.request.user.id
+        single_user = self.request.query_params.get('username', None)
+        if single_user:
+            member = models.Member.objects.filter(user__username=single_user)
+        else:
+            member = models.Member.objects.all()
         return member
 
     def get_permissions(self):
-        permission_classes = [AllowAny]
+        permission_classes = [IsAuthenticatedOrReadOnly]
         return [permission() for permission in permission_classes]
 
 
 class EventAPIViewSet(viewsets.ModelViewSet):
     serializer_class = serializers.EventsSerializer
-    queryset = User.objects.all()
+    queryset = models.Event.objects.all()
 
     def get_permissions(self):
 
-        permission_classes = [AllowAny]
+        permission_classes = [IsAuthenticatedOrReadOnly]
         return [permission() for permission in permission_classes]
 
 
@@ -49,7 +50,7 @@ class TaskAPIViewSet(viewsets.ModelViewSet):
 
     def get_permissions(self):
 
-        permission_classes = [AllowAny]
+        permission_classes = [IsAuthenticated]
         return [permission() for permission in permission_classes]
 
 
@@ -59,5 +60,5 @@ class SkillAPIViewSet(viewsets.ModelViewSet):
 
     def get_permissions(self):
 
-        permission_classes = [AllowAny]
+        permission_classes = [IsAuthenticatedOrReadOnly]
         return [permission() for permission in permission_classes]
