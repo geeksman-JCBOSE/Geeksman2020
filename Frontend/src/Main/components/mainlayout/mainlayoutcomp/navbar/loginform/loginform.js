@@ -34,14 +34,14 @@ function LoginForm() {
         setLoginstat("Welcome User Redirecting....");
         window.$token = tokenis;
         history.push("./userpanel");
-        setLogin;
+        setLogin(true);
       },
       error: function () {
         setLoginstat("Retry Again");
       },
     });
   };
-  handleLogout = () => {
+  const handleLogout = () => {
     setLogin(false);
     window.$token = null;
   };
