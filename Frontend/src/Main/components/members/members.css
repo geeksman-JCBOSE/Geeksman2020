@@ -4,7 +4,7 @@
   width: 100%;
 }
 .margincards {
-  padding-left: 50rem;
+  padding-left: rem;
   margin-top: 0rem;
 }
 .margincardmembers {
@@ -37,26 +37,26 @@
 body {
   overflow-y: scroll !important;
 }
-
 .dcard {
   height: 22rem;
-  margin-top: 2.3rem;
-  max-width: 20rem;
+  margin-top: 1rem;
+  max-width: 21rem;
   background-color: rgba(248, 248, 248, 0.8);
   box-shadow: 1px 2px 3px rgba(39, 87, 141, 0.2);
   transition: all 0.4s;
   backface-visibility: hidden;
-  position: relative;
+  margin-left: 4rem;
 }
 .dmcard {
   height: 20rem;
-  margin-top: 2.3rem;
+  margin-top: 5rem;
   max-width: 18rem;
   background-color: rgba(248, 248, 248, 0.8);
   box-shadow: 1px 2px 3px rgba(39, 87, 141, 0.2);
   transition: all 0.4s;
   backface-visibility: hidden;
   position: relative;
+  margin-left: 1.9rem;
 }
 .hovermaterial {
   position: absolute;
@@ -80,7 +80,9 @@ body {
   height: 100%;
   display: block;
 }
-
+.dcard:hover {
+  transform: scale(1.05);
+}
 .dmcard:hover {
   transform: scale(1.05);
 }
@@ -195,6 +197,9 @@ body {
   overflow-wrap: break-word;
   padding: 0.8rem 0.2rem 0.6rem 0.6rem;
 }
+.ddescription {
+  font-size: 0.8rem;
+}
 .address {
   padding-bottom: 0.4rem;
 }
@@ -229,6 +234,7 @@ body {
   color: #fe7f9c;
   font-size: 0.8rem;
   margin-top: -0.1rem;
+  text-transform: uppercase;
 }
 .memberrelativwrapper {
   width: 208px;
@@ -243,6 +249,12 @@ body {
   font-size: 0.7rem;
   color: gray;
 }
+.myear {
+  padding-bottom: 1.5rem;
+  margin-top: 0rem;
+  font-size: 0.7rem;
+  color: gray;
+}
 .address {
   position: absolute;
   bottom: 10%;
@@ -252,11 +264,6 @@ body {
   color: gray;
 }
 @media only screen and (max-width: 500px) {
-  .margincard {
-    margin-left: -2.6rem;
-  }
-  .margincardmembers {
-  }
   .memtopback {
     height: 8rem;
     position: relative;
@@ -279,5 +286,25 @@ body {
     margin-top: 0.7rem;
     font-weight: 700;
     margin-bottom: -0.5rem;
+  }
+  .dcard {
+    height: 22rem;
+    margin-top: 1rem;
+    max-width: 21rem;
+    background-color: rgba(248, 248, 248, 0.8);
+    box-shadow: 1px 2px 3px rgba(39, 87, 141, 0.2);
+    transition: all 0.4s;
+    backface-visibility: hidden;
+    margin-left: 1.3rem;
+  }
+  .dmcard {
+    height: 20rem;
+    max-width: 18rem;
+    background-color: rgba(248, 248, 248, 0.8);
+    box-shadow: 1px 2px 3px rgba(39, 87, 141, 0.2);
+    transition: all 0.4s;
+    backface-visibility: hidden;
+    position: relative;
+    margin-left: 2.8rem;
   }
 }

@@ -12,7 +12,7 @@ function LoginForm() {
   const [loginstat, setLoginstat] = useState(" ");
   const [user_name, setUser_name] = useState("");
   const [pwd, setPwd] = useState("");
-
+  const [login, setLogin] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleLogin = (e) => {
@@ -34,16 +34,27 @@ function LoginForm() {
         setLoginstat("Welcome User Redirecting....");
         window.$token = tokenis;
         history.push("./userpanel");
-        window.$loginstatus = true;
+        setLogin;
       },
       error: function () {
         setLoginstat("Retry Again");
       },
     });
   };
+  handleLogout = () => {
+    setLogin(false);
+    window.$token = null;
+  };
   const loginbutton = (
     <div className="loginbtn">
       <Link to="#" onClick={handleShow}>
+        Login
+      </Link>
+    </div>
+  );
+  const logoutbutton = (
+    <div className="logoutbtn">
+      <Link to="#" onClick={handleLogout}>
         Login
       </Link>
     </div>
