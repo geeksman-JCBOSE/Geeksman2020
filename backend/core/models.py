@@ -27,10 +27,18 @@ class Member(models.Model):
     linkedin = models.URLField(max_length=1000, null=True, blank=True)
     skills = models.ManyToManyField(Skill)
     status = models.CharField(max_length=1000, null=True)
+    pos_choices = (
+        ('1', 'Secretary'),
+        ('2', 'Joint-Secretary'),
+        ('3', 'Session Head'),
+        ('4', 'Social Media Head'),
+        ('5', 'Member'),
+    )
+    position = models.CharField(max_length=100, choices=pos_choices, default='5')
 
     class Meta:
         verbose_name_plural = 'Members'
-        ordering = ['-year', 'user__first_name']
+        ordering = ['-year', 'position', 'user__first_name']
 
     def __str__(self):
         return self.user.username

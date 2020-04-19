@@ -1,18 +1,20 @@
 from django.contrib import admin
 from . import models
-
+from import_export.admin import ImportExportModelAdmin, ImportExportActionModelAdmin
+admin.site.site_header = 'GEEKSMAN'
 # Register your models here.
 
 
-class MembersAdminView(admin.ModelAdmin):
-    list_display = ('user', 'year', 'branch', 'phone_number')
+class MembersAdminView(ImportExportModelAdmin, ImportExportActionModelAdmin):
+    list_display = ('user', 'year', 'branch', 'phone_number', 'position')
     list_display_links = ('user', 'year', 'branch', 'phone_number')
-    search_fields = ('user', 'year', 'branch', 'phone_number', 'description', 'skills', 'tagline')
-    list_filter = ('user', 'year', 'skills', 'branch')
+    search_fields = ('user', 'year', 'branch', 'phone_number', 'description', 'skills', 'tagline', 'position')
+    list_filter = ('year', 'skills', 'branch', 'position')
 
     list_max_show_all = 100
 
-class EventsAdminView(admin.ModelAdmin):
+
+class EventsAdminView(ImportExportModelAdmin, ImportExportActionModelAdmin):
     list_display = ('name', 'date_time', 'venue', 'entry_fee')
     list_display_links = ('name',)
     list_editable = ('date_time', 'venue', 'entry_fee')
@@ -21,12 +23,13 @@ class EventsAdminView(admin.ModelAdmin):
 
     list_max_show_all = 100
 
-class TasksAdminView(admin.ModelAdmin):
+
+class TasksAdminView(ImportExportModelAdmin, ImportExportActionModelAdmin):
     list_display = ('name', 'deadline', 'submit_info')
     list_display_links = ('name',)
     list_editable = ('deadline',)
     search_fields = ('name', 'submit_info', 'deadline')
-    list_filter = ('name', 'submit_info', 'deadline')
+    list_filter = ('submit_info', 'deadline')
 
     list_max_show_all = 100
 
