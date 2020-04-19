@@ -12,7 +12,7 @@ class Events extends React.Component {
       dataType: "json",
       url: "https://geeksman.herokuapp.com/api/events/",
       headers: {},
-    }).done(function (data) {
+    }).done(function (data){
       var obj = JSON.parse(JSON.stringify(data));
       console.log(data);
       var details = "";

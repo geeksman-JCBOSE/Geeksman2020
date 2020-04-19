@@ -40,58 +40,7 @@
   margin-left: 1rem;
   font-size: 1.7rem;
 }
-.emaillabel {
-  display: block;
-  text-align: left;
-  margin-left: 1rem;
-  font-size: 1.2rem;
-  margin-bottom: 0.4rem;
-}
-.emailsearch {
-  display: block;
-  width: 80%;
-  border-radius: 8px;
-  margin-left: 1rem;
-  padding-left: 0.6rem;
-  height: 2.2rem;
-}
-.namesection {
-  margin-top: 1rem;
-}
-.nameslabels {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-.firstnamelabel {
-  text-align: left;
-  margin-left: 1rem;
-  font-size: 1.2rem;
-  margin-bottom: 0.4rem;
-}
-.lastnamelabel {
-  text-align: left;
-  margin-left: 1rem;
-  font-size: 1.2rem;
-  margin-bottom: 0.4rem;
-}
-.namesinputs {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-.firstnameinput {
-  width: 80%;
-  border-radius: 8px;
-  margin-left: 1rem;
-  padding-left: 0.6rem;
-  height: 2.2rem;
-}
-.lastnameinput {
-  width: 80%;
-  border-radius: 8px;
-  margin-left: 1rem;
-  padding-left: 0.6rem;
-  height: 2.2rem;
-}
+
 .updatebtn {
   text-align: left;
   margin-top: 2rem;
@@ -103,32 +52,6 @@
   padding: 1rem 2rem;
   background-color: lightblue;
   border-radius: 100px;
-}
-.changepasswordheading {
-  text-align: left;
-  margin-top: 3rem;
-}
-.changepasswordheading h1 {
-  margin-left: 1rem;
-  font-size: 1.7rem;
-}
-.newpass {
-  margin-top: 1rem;
-}
-.newpasslabel {
-  text-align: left;
-  margin-left: 1rem;
-  display: block;
-  margin-bottom: 0.6rem;
-}
-.confirmnew {
-  margin-top: 1rem;
-}
-.newpassinput {
-  display: block;
-  margin-left: 1rem;
-  border-radius: 8px;
-  width: 80%;
 }
 .active {
   background: #021b79;
@@ -142,3 +65,193 @@ input {
   border: none;
   transition: all 0.1s;
 }
+.yeardiv{
+  margin-top: 1rem;
+}
+.yearlabel{
+  display: block;
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.yearinput{
+  display: block;
+  width:30%;
+  margin-top: .6rem;
+  margin-left: .9rem;
+  border-radius: 9px;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color:grey;
+}
+.taglinediv{
+  margin-top: 1rem;
+}
+.taglinelabel{
+  display: block;
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.taglineinput{
+  display: block;
+  width:30%;
+  margin-top: .6rem;
+  margin-left: .9rem;
+  border-radius: 9px;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color:grey;
+}
+.branchdiv{
+  margin-top: 1rem;
+}
+.branchlabel{
+  display: block;
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.branchinput{
+  display: block;
+  width:30%;
+  margin-top: .6rem;
+  margin-left: .9rem;
+  border-radius: 9px;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color:grey;
+}
+.addressdiv{
+  margin-top: 1rem;
+}
+.addresslabel{
+  display: block;
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.addressinput{
+  display: block;
+  width:30%;
+  margin-top: .6rem;
+  margin-left: .9rem;
+  border-radius: 9px;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color:grey;
+}
+.descriptiondiv{
+  margin-top: 1rem;
+}
+.descriptionlabel{
+  display: block;
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.descriptioninput{
+  display: block;
+  width:30%;
+  margin-top: .6rem;
+  margin-left: .9rem;
+  border-radius: 9px;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color:grey;
+}
+.phonediv{
+  margin-top: 1rem;
+}
+.phonelabel{
+  display: block;
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.phoneinput{
+  display: block;
+  width:30%;
+  margin-top: .6rem;
+  margin-left: .9rem;
+  border-radius: 9px;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color:grey;
+}
+.gitdiv{
+  margin-top: 1rem;
+}
+.gitlabel{
+  display: block;
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.gitinput{
+  display: block;
+  width:30%;
+  margin-top: .6rem;
+  margin-left: .9rem;
+  border-radius: 9px;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color:grey;
+}.linkeddiv{
+  margin-top: 1rem;
+}
+.linkedlabel{
+  display: block;
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.linkedinput{
+  display: block;
+  width:30%;
+  margin-top: .6rem;
+  margin-left: .9rem;
+  border-radius: 9px;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color:grey;
+}
+.skillsdiv{
+  margin-top: 1rem;
+}
+.skillslabel{
+  display: block;
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.skillsinput{
+  display: block;
+  width:30%;
+  margin-top: .6rem;
+  margin-left: .9rem;
+  border-radius: 9px;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color:grey;
+}
+.imgdiv{
+  margin-top: 1rem;
+}
+.imglabel{
+  display: block;
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.imginput{
+  display: block;
+  width:30%;
+  margin-top: .6rem;
+  
+  border-radius: 9px;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color:grey;
+}
+
