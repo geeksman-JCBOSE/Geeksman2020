@@ -21,7 +21,7 @@ class Members extends React.Component {
         if (obj[i].status == "jsec" || obj[i].status == "seceratory") {
           details +=
             `
-        <div class="col-sm-4 margincard">
+        <div class="col-sm-4 margincards">
             <div class="dcards">
               <div class="dcard">
                 <div class="dimg">
@@ -175,9 +175,8 @@ class Members extends React.Component {
             </span>
           </div>
         </div>
-        <div className="jumbotron">
-          <div className="row" id="Jsecdetails"></div>
-        </div>
+
+        <div className="row" id="Jsecdetails"></div>
       </div>
     );
   }

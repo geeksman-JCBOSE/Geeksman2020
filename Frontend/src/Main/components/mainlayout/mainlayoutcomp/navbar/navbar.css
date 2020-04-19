@@ -72,6 +72,19 @@ body {
   border-radius: 100px;
   padding: 0.4rem 1.3rem 0.58rem;
 }
+.logoutbtn {
+  position: absolute;
+  right: 2.8%;
+  top: 2.9%;
+}
+.logoutbtn a {
+  border: 1.2px solid red;
+  text-decoration: none;
+  color: red;
+  background: transparent;
+  border-radius: 100px;
+  padding: 0.4rem 1.3rem 0.58rem;
+}
 
 .nav-logo {
   margin-left: 2rem;
@@ -100,9 +113,21 @@ body {
   font-size: 0.85rem;
   font-family: "Major Mono Display", monospace;
 }
+.nav-links a:hover {
+  color: #bfe7fa;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-family: "Major Mono Display", monospace;
+}
 .loginbtn a:hover {
   text-decoration: none;
   color: gold;
+}
+.logoutbtn a:hover {
+  text-decoration: none;
+  color: red;
 }
 .burger {
   display: none;
@@ -176,7 +201,10 @@ body {
     right: 20%;
     top: 3%;
   }
-
+  .logoutbtn {
+    right: 20%;
+    top: 3%;
+  }
   .nav-links li {
     z-index: 5;
     opacity: 0;

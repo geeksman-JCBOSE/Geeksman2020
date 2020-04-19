@@ -1,0 +1,144 @@
+.userpanelhead {
+  text-align: left;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.userform {
+  background: #021b79;
+  margin-top: 1rem;
+}
+.userpanelhead h1 {
+  margin-bottom: 0;
+  margin-left: 0.8rem;
+  font-weight: bold;
+}
+.usergrid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.userlinks {
+  position: relative;
+}
+.userlinkslist {
+  margin-top: 1rem;
+  list-style-type: none;
+  background: #2f80ed;
+  margin-left: -3rem;
+}
+.userlinkslist li {
+  padding: 0.8rem 0;
+}
+.userlinkslist li a {
+  color: lightblue;
+  font-weight: bold;
+}
+.userformheading {
+  text-align: left;
+  margin-top: 1rem;
+}
+.userformheading h1 {
+  margin-left: 1rem;
+  font-size: 1.7rem;
+}
+.emaillabel {
+  display: block;
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+.emailsearch {
+  display: block;
+  width: 80%;
+  border-radius: 8px;
+  margin-left: 1rem;
+  padding-left: 0.6rem;
+  height: 2.2rem;
+}
+.namesection {
+  margin-top: 1rem;
+}
+.nameslabels {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.firstnamelabel {
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+.lastnamelabel {
+  text-align: left;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+.namesinputs {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.firstnameinput {
+  width: 80%;
+  border-radius: 8px;
+  margin-left: 1rem;
+  padding-left: 0.6rem;
+  height: 2.2rem;
+}
+.lastnameinput {
+  width: 80%;
+  border-radius: 8px;
+  margin-left: 1rem;
+  padding-left: 0.6rem;
+  height: 2.2rem;
+}
+.updatebtn {
+  text-align: left;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.updatebtn a {
+  margin-left: 1rem;
+  padding: 1rem 2rem;
+  background-color: lightblue;
+  border-radius: 100px;
+}
+.changepasswordheading {
+  text-align: left;
+  margin-top: 3rem;
+}
+.changepasswordheading h1 {
+  margin-left: 1rem;
+  font-size: 1.7rem;
+}
+.newpass {
+  margin-top: 1rem;
+}
+.newpasslabel {
+  text-align: left;
+  margin-left: 1rem;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+.confirmnew {
+  margin-top: 1rem;
+}
+.newpassinput {
+  display: block;
+  margin-left: 1rem;
+  border-radius: 8px;
+  width: 80%;
+}
+.active {
+  background: #021b79;
+}
+.userpanellayout {
+  background: #000046;
+  color: white;
+}
+
+input {
+  border: none;
+  transition: all 0.1s;
+}
