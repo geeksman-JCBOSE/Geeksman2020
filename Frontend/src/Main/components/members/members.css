@@ -3,13 +3,7 @@
   position: relative;
   width: 100%;
 }
-.margincards {
-  padding-left: 50rem;
-  margin-top: 0rem;
-}
-.margincardmembers {
-  padding-left: 50px;
-}
+
 .memtop-text {
   position: absolute;
   z-index: 1;
@@ -40,23 +34,25 @@ body {
 
 .dcard {
   height: 22rem;
-  margin-top: 2.3rem;
+  margin-top: 1rem;
   max-width: 20rem;
   background-color: rgba(248, 248, 248, 0.8);
   box-shadow: 1px 2px 3px rgba(39, 87, 141, 0.2);
   transition: all 0.4s;
   backface-visibility: hidden;
   position: relative;
+  margin-left: 4rem;
 }
 .dmcard {
   height: 20rem;
-  margin-top: 2.3rem;
+  margin-top: 4.2rem;
   max-width: 18rem;
   background-color: rgba(248, 248, 248, 0.8);
   box-shadow: 1px 2px 3px rgba(39, 87, 141, 0.2);
   transition: all 0.4s;
   backface-visibility: hidden;
   position: relative;
+  margin-left: 1.3rem;
 }
 .hovermaterial {
   position: absolute;
@@ -96,6 +92,9 @@ body {
 }
 
 .dmdcard:hover {
+  transform: scale(1.05);
+}
+.dcard:hover {
   transform: scale(1.05);
 }
 
@@ -252,11 +251,6 @@ body {
   color: gray;
 }
 @media only screen and (max-width: 500px) {
-  .margincard {
-    margin-left: -2.6rem;
-  }
-  .margincardmembers {
-  }
   .memtopback {
     height: 8rem;
     position: relative;
@@ -279,5 +273,27 @@ body {
     margin-top: 0.7rem;
     font-weight: 700;
     margin-bottom: -0.5rem;
+  }
+  .dcard {
+    height: 22rem;
+    margin-top: 1rem;
+    max-width: 20rem;
+    background-color: rgba(248, 248, 248, 0.8);
+    box-shadow: 1px 2px 3px rgba(39, 87, 141, 0.2);
+    transition: all 0.4s;
+    backface-visibility: hidden;
+    position: relative;
+    margin-left: 1.9rem;
+  }
+  .dmcard {
+    height: 20rem;
+    margin-top: 4.2rem;
+    max-width: 18rem;
+    background-color: rgba(248, 248, 248, 0.8);
+    box-shadow: 1px 2px 3px rgba(39, 87, 141, 0.2);
+    transition: all 0.4s;
+    backface-visibility: hidden;
+    position: relative;
+    margin-left: 3rem;
   }
 }

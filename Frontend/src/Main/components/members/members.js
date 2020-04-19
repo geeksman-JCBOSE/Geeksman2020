@@ -41,7 +41,6 @@ class Members extends React.Component {
             obj[i].tagline +
             `</span>
                 </div>
-
                 <div class="hovermaterial">
                   <div class="memberrelativwrapper">
                     <img src="` +
@@ -88,7 +87,6 @@ class Members extends React.Component {
             </div>
           </div>
           
-
     `;
         } else {
           details +=
@@ -175,8 +173,9 @@ class Members extends React.Component {
             </span>
           </div>
         </div>
-
-        <div className="row" id="Jsecdetails"></div>
+        <div className="jumbotron">
+          <div className="row" id="Jsecdetails"></div>
+        </div>
       </div>
     );
   }
