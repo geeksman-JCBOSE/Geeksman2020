@@ -2,27 +2,32 @@ import React, { useState } from "react";
 import "./css/dailytask.css";
 import { Link } from "react-router-dom";
 import $ from "jquery";
-import back from "../members/memtop.png";
-
-import Navbar from "../mainlayout/mainlayoutcomp/navbar/navbar";
+import UserPanelTop from "./components/userpaneltop";
 
 function DailyTask() {
   $.ajax({
     type: "GET",
     crossDomain: true,
     dataType: "json",
-    url: "https://geeksman.herokuapp.com/api/task/",
+    url: "https://geeksman.herokuapp.com/api/tasks/",
     headers: {},
   }).done(function (data) {
     var obj = JSON.parse(JSON.stringify(data));
     console.log(data);
     var details = "";
     for (var i = 0; i < obj.length; i++) {
-      details += `<div class="card">
+      details +=
+        `<div class="card">
       <div
-        class="card-body text-left"><p class="lead">Task 1</p>
-        <p class="taskname">Task Name</p>
-        <p class="redtext">Submission date</p></div>
+        class="card-body text-left"><p class="lead">` +
+        obj[i].name +
+        `</p>
+        <p class="taskname">` +
+        obj[i].submit_info +
+        `</p>
+        <p >Deadline <span class="redtext">` +
+        obj[i].deadline +
+        `</span></p></div>
     </div>
                       
         
@@ -40,14 +45,7 @@ function DailyTask() {
     new Date().getDate();
   return (
     <>
-      <Navbar />
-      <div className="memtopback">
-        <img src={back} className="memtopbackstyle" />
-        <div className="memtop-text">
-          <span className="memtop-header">Panel</span>
-          <span className="memtop-tagline">Learn, Grow, Evolve</span>
-        </div>
-      </div>
+      <UserPanelTop />
       <div className="UserPanel">
         <div className="userpanellayout">
           <div className="usergrid">

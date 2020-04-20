@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./css/updateuser.css";
 import { Link } from "react-router-dom";
-import back from "../members/memtop.png";
 import $ from "jquery";
-import Navbar from "../mainlayout/mainlayoutcomp/navbar/navbar";
 import ReactMarkdown from "react-markdown";
+import UserPanelTop from "./components/userpaneltop";
 function UpdateUser() {
   const [first_name, setFirst_name] = useState("");
   const [last_name, setLast_name] = useState("");
@@ -17,15 +16,24 @@ function UpdateUser() {
   const [github_account, setGithub_account] = useState("");
   const [linkedln_account, setLinkedln_account] = useState("");
   const [status, setStatus] = useState("");
-  const handlePost = () => {
+  const handlePost = (e) => {
     $.ajax({
-      url: "http://geeksman.herokuapp.com/members/",
-      type: "POST",
+      url: localStorage.getItem("userurl"),
+      type: "PATCH",
       crossDomain: true,
       dataType: "json",
       contentType: "application/json; charset=utf-8",
       cache: false,
-      data: JSON.stringify({}),
+      headers: {
+        Authorization: "Token " + localStorage.getItem("token"),
+      },
+      data: JSON.stringify({
+        tagline: tagline,
+        year: last_name,
+        github: github_account,
+        pic: linkedln_account,
+        skills: first_name,
+      }),
       contentType: "application/json",
       success: function (data) {
         setStatus("Details Updated Successfully");
@@ -37,14 +45,7 @@ function UpdateUser() {
   };
   return (
     <>
-      <Navbar />
-      <div className="memtopback">
-        <img src={back} className="memtopbackstyle" />
-        <div className="memtop-text">
-          <span className="memtop-header">Panel</span>
-          <span className="memtop-tagline">Learn, Grow, Evolve</span>
-        </div>
-      </div>
+      <UserPanelTop />
       <div className="UserPanel">
         <div className="userpanellayout">
           <div className="usergrid">

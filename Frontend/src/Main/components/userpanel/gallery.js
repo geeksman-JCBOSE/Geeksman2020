@@ -1,8 +1,7 @@
 import React from "react";
 import "./css/gallery.css";
-import back from "../members/memtop.png";
+import UserPanelTop from "./components/userpaneltop";
 import { Link } from "react-router-dom";
-import Navbar from "../mainlayout/mainlayoutcomp/navbar/navbar";
 import $ from "jquery";
 
 function Gallery() {
@@ -17,12 +16,19 @@ function Gallery() {
     console.log(data);
     var details = "";
     for (var i = 0; i < obj.length; i++) {
-      details += `
+      details +=
+        `
       <div class="card">
       <div
-        class="card-body text-left"><p class="lead">Task 1</p>
-        <p class="taskname">Task Name</p>
-        <p class="redtext">Submission date</p></div>
+        class="card-body text-left"><p class="lead">` +
+        obj[i].name +
+        `</p><a class="gallerylink" href="` +
+        obj[i].link +
+        `">Link Here
+        </a>
+        <p >Publish Date <span class="redtext">` +
+        obj[i].date +
+        `</span></p></div>
     </div>
         
   `;
@@ -33,14 +39,7 @@ function Gallery() {
 
   return (
     <>
-      <Navbar />
-      <div className="memtopback">
-        <img src={back} className="memtopbackstyle" />
-        <div className="memtop-text">
-          <span className="memtop-header">Panel</span>
-          <span className="memtop-tagline">Learn, Grow, Evolve</span>
-        </div>
-      </div>
+      <UserPanelTop />
       <div className="UserPanel">
         <div className="userpanellayout">
           <div className="usergrid">

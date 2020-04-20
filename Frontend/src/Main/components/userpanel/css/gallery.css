@@ -48,3 +48,6 @@
   padding-top: 1.5rem;
   text-align: center;
 }
+.gallerylink:hover {
+  text-decoration: none;
+}

@@ -55,3 +55,34 @@
     color: #000;
     text-transform: uppercase;
 }
+.textBox span{
+    font-size: 3.5rem;
+}
+@media only screen and (min-width:300px) and (max-width:1210px){
+    .textBox{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:400px) and (max-width:1200px){
+    .carouswr{
+        width: 94%;
+    }
+}
+@media only screen and (min-width:400px) and (max-width:620px){
+    .carouswr{
+        width:100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .carousel{
+        height: 100vh;
+    }
+    .textBox{
+        font-size: 4.2rem;
+    }
+    .textBox span{
+        font-size: 2rem;
+    }
+}

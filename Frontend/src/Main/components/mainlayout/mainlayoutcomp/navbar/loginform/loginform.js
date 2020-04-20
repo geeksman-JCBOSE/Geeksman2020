@@ -32,8 +32,8 @@ function LoginForm() {
       success: function (data) {
         var tokenis = data.token;
         setLoginstat("Welcome User Redirecting....");
-        window.$token = tokenis;
-        history.push("./userpanel");
+        localStorage.setItem("token", tokenis);
+        history.push("./usergallery");
         setLogin(true);
       },
       error: function () {

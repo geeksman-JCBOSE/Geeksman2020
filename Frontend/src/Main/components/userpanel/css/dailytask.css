@@ -1,7 +1,8 @@
 .dailytask {
   width: 100%;
   background-color: white;
-  height: 31rem;
+  min-height: 35rem;
+  max-width: 100%;
 }
 .ddate {
   font-size: 1.5rem;
@@ -21,6 +22,8 @@
 .taskname {
   font-size: 1.1rem;
   margin-top: -0.5rem;
+}
+.logoutbuttonstyle {
 }
 @media only screen and (max-width: 500px) {
   .card {
