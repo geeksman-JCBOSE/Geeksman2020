@@ -11,7 +11,7 @@ function UserPanelTop() {
     localStorage.clear();
   };
   $.ajax({
-    url: "http://geeksman.herokuapp.com/api/members/?single=true",
+    url: "https://geeksman.herokuapp.com/api/members/?single=true",
     type: "GET",
     crossDomain: true,
     dataType: "json",

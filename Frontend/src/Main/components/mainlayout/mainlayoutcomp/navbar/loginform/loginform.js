@@ -18,7 +18,7 @@ function LoginForm() {
   const handleLogin = (e) => {
     e.preventDefault();
     $.ajax({
-      url: "http://geeksman.herokuapp.com/api-token-auth/",
+      url: "https://geeksman.herokuapp.com/api-token-auth/",
       type: "POST",
       crossDomain: true,
       dataType: "json",
