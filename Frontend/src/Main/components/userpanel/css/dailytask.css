@@ -1,0 +1,31 @@
+.dailytask {
+  width: 100%;
+  background-color: white;
+  height: 31rem;
+}
+.ddate {
+  font-size: 1.5rem;
+  color: goldenrod;
+  padding-top: 1rem;
+  text-align: right;
+  margin-right: 2rem;
+}
+.card {
+  max-width: 90%;
+  margin-left: 3.5rem;
+  margin-top: 2rem;
+}
+.card-body {
+  background-color: gainsboro;
+}
+.taskname {
+  font-size: 1.1rem;
+  margin-top: -0.5rem;
+}
+@media only screen and (max-width: 500px) {
+  .card {
+    max-width: 90%;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+}

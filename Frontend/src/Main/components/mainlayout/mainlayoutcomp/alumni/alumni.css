@@ -3,27 +3,18 @@
     justify-content: space-around;
     align-items: center;
     height: fit-content;
-   
 }
-
 .firstcard{
-    height: 27rem;
-    width: 32%;
+    height: 20rem;
+    width: 30%;
     margin:1rem;
     background:white;
     position: relative;
     box-shadow: 0 3px 3px rgba(0,0,0,.2);
-    background:linear-gradient(to right,#43C6AC,#0ED2F7);   
+    border: 1px solid rgba(255,255,255,1);
+    background:linear-gradient(to right,#43C6AC,#0ED2F7);
 }
-
 .alumnihr{
-    width: 30%;
-    border-top: 2px solid rgba(0, 0,0, .4);
-    margin-top: .6rem;
-    margin-bottom: .6rem;
-    margin-block-end: 0;
-}
-.alumnihr2{
     width: 30%;
     border-top: 2px solid rgba(0, 0,0, .4);
     margin-top: .6rem;
@@ -59,55 +50,43 @@
     border: 4px solid lightblue;
     border-radius: 50%;
 }
-.alumnilife{
-    padding:.7rem .8rem;
-}
-.quotes{
-    font-size:1.2rem;
-}
 .alumnilife p{
-    font-size: 1.1rem;
+    font-size: .8rem;
     padding: 0 .2rem;
     text-align: center;
-    line-height: 1.3;
-    font-family: sans-serif;
-    font-weight: 500;
+    line-height: 1.2;
+    font-family: cursive;
     margin-bottom: 0rem;
 }
 .workarea h1{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     margin-block-end: 0;
 }
 .workarea span{
     display: block;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 .secondcard{
-    height: 27rem;
-    width: 32%;
+    height: 20rem;
+    width: 30%;
     margin:1rem;
     color: black;
     position: relative;
     box-shadow: 0 3px 3px rgba(0,0,0,.2);
-  
+    border: 1px solid rgba(255,255,255,1);
     background:linear-gradient(to right,#007991,#78ffd6);
-  
 }
-
 .thirdcard{
-    height: 27rem;
-    width: 32%;
+    height: 20rem;
+    width: 30%;
     margin:1rem;
     color: black;
     position: relative;
     box-shadow: 0 3px 3px rgba(0,0,0,.2);
- 
+    border: 1px solid rgba(255,255,255,1);
     background:linear-gradient(to right,#56CCF2,#2F80ED);
-   
-   
 }
-
 
 .alumniheader{
     margin:4rem 0;
@@ -128,76 +107,8 @@ width: 6rem;
 height: 6rem;
 width: 6rem;
 }
-
-@media only screen and (max-width:768px){
+@media only screen and (max-width:200px){
     .alumni{
-        display: block;
-    }
-    .firstcard{
-        margin:1rem auto;
-    height: 28rem;
-    width: 48%;
-    }
-    .secondcard{
-        margin:3rem auto;
-        height: 28rem;
-        width: 48%;
-    }
-    .thirdcard{
-        margin:3rem auto;
-        height: 28rem;
-        width: 48%;
-    }
-    .alumnihr2{
-        width: 75%;
-    }
-}
-@media only screen and (min-width:768px) and (max-width:1125px){
-    .alumni{
-        display: block;
-    }
-    .firstcard{
-        margin:1rem auto;
-    height: 29rem;
-    width: 38%;
-    }
-    .secondcard{
-        margin:3rem auto;
-        height: 29rem;
-        width: 38%;
-    }
-    .thirdcard{
-        margin:3rem auto;
-        height: 29rem;
-        width: 38%;
-    }
-    .alumnihr2{
-        width: 55%;
-    }
-    
-  }
-  @media only screen and (min-width:10px) and (max-width:540px){
-    .alumni{
-        display: block;
-    }
-    .firstcard{
-        margin:1rem auto;
-    height: 29rem;
-    width: 80%;
-    }
-    .secondcard{
-        margin:3rem auto;
-        height: 29rem;
-        width: 80%;
-    }
-    .thirdcard{
-        margin:3rem auto;
-        height: 29rem;
-        width: 80%;
-    }
-    .alumnihr2{
-        width: 90%;
+        flex-flow: wrap;
     }
   }
-
- 

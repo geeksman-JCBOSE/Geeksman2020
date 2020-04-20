@@ -1,0 +1,50 @@
+.userpanelhead {
+  text-align: left;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.userform {
+  background: white;
+}
+.userpanelhead h1 {
+  margin-top: 2rem;
+  margin-left: 0.8rem;
+  font-weight: bold;
+}
+.usergrid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.userlinks {
+  position: relative;
+}
+.userlinkslist {
+  list-style-type: none;
+  background: gray;
+  margin-left: -3rem;
+}
+.userlinkslist li {
+  padding: 0.8rem 0;
+}
+.userlinkslist li a {
+  color: rgb(46, 46, 46);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.active {
+  background: white;
+}
+.active a {
+  color: black;
+}
+.userpanellayout {
+  background: gainsboro;
+  color: black;
+}
+.ddates {
+  font-size: 1.5rem;
+  color: goldenrod;
+  padding-top: 1.5rem;
+  text-align: center;
+}

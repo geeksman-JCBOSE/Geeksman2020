@@ -8,8 +8,8 @@ class Alumni extends React.Component {
 
   render() {
     return (
-    <div classname="backfull">
-    <div className="alumnihead"><h1>Our Alumni's <hr className="alumnihr2" /></h1></div>
+    <div>
+    <div className="alumnihead"><h1>Our Alumni's</h1></div>
       <div className="alumni">
 
         <div className="firstcard">
