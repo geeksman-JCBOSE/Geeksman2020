@@ -21,10 +21,9 @@ code {
       "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow: hidden !important ;
-    display: block;
+    overflow: hidden;
   }
-  html {
-    overflow: hidden !important;
+  .html {
+    overflow-x: hidden !important;
   }
 }
