@@ -68,7 +68,7 @@
         width: 94%;
     }
 }
-@media only screen and (min-width:400px) and (max-width:620px){
+@media only screen and (min-width:200px) and (max-width:620px){
     .carouswr{
         width:100%;
         top: 0;
