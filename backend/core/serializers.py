@@ -37,6 +37,7 @@ class EventsSerializer(serializers.ModelSerializer):
 
 class TaskSerializer(serializers.ModelSerializer):
     url = serializers.HyperlinkedIdentityField(view_name="task-detail")
+    skills = SkillsSerializer(many=True)
 
     class Meta:
         model = models.Task

@@ -46,11 +46,19 @@ class EventAPIViewSet(viewsets.ModelViewSet):
 class TaskAPIViewSet(viewsets.ModelViewSet):
 
     serializer_class = serializers.TaskSerializer
-    queryset = models.Task.objects.all()
+    # queryset = models.Task.objects.all()
+
+    def get_queryset(self):
+        skill = self.request.query_params.get('skill', None)
+        if skill:
+            member = models.Task.objects.filter(skills__name__icontains=skill)
+        else:
+            member = models.Task.objects.all()
+        return member
 
     def get_permissions(self):
 
-        permission_classes = [IsAuthenticated]
+        permission_classes = [IsAuthenticatedOrReadOnly]
         return [permission() for permission in permission_classes]
 
 
