@@ -28,21 +28,26 @@ function UpdateUser() {
         Authorization: "Token " + localStorage.getItem("token"),
       },
       data: JSON.stringify({
+        phone_number: phone_no,
         tagline: tagline,
-        year: last_name,
         github: github_account,
-        pic: linkedln_account,
-        skills: first_name,
+        linkedin: linkedln_account,
+        year: year,
+        address: address,
+        description: description,
       }),
       contentType: "application/json",
       success: function (data) {
         setStatus("Details Updated Successfully");
+        alert(status);
       },
       error: function () {
         setStatus("Sorry Error Occured");
+        alert(status);
       },
     });
   };
+
   return (
     <>
       <UserPanelTop />
