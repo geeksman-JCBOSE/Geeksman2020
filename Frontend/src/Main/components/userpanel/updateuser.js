@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./css/updateuser.css";
 import { Link } from "react-router-dom";
 import $ from "jquery";
+import UserView from "./components/userview";
 import ReactMarkdown from "react-markdown";
 import UserPanelTop from "./components/userpaneltop";
 function UpdateUser() {
@@ -51,11 +52,12 @@ function UpdateUser() {
   return (
     <>
       <UserPanelTop />
+      <UserView />
       <div className="UserPanel">
         <div className="userpanellayout">
           <div className="usergrid">
             <div className="userlinks">
-              <ul className="userlinkslist">
+              <ul className="userlinkslist hideonmob">
                 <li>
                   <Link to="/usertask">Daily Task</Link>
                 </li>

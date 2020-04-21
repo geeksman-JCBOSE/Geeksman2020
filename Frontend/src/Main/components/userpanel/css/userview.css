@@ -1,0 +1,26 @@
+.hideonpc {
+  display: none;
+}
+.hideonmob {
+  display: block;
+}
+
+@media screen and (max-width: 902px) {
+  .hideonmob {
+    display: none;
+  }
+  .hideonpc {
+    display: block;
+  }
+  .listitems:hover {
+    background-color: goldenrod;
+  }
+  .listitems {
+    font-size: 0.8rem;
+    border-bottom: 1px solid black;
+    margin: -0.7rem -0.7rem -0.7rem -0.7rem;
+  }
+  .logout:hover {
+    background-color: red;
+  }
+}

@@ -1,6 +1,10 @@
 body {
   overflow: hidden !important;
 }
+html{
+  overflow-x: hidden!important;
+  position: relative;
+}
 @media only screen and (max-width: 600px) {
   html {
     font-size: 12px;
@@ -10,10 +14,12 @@ body {
 @media only screen and (max-width: 960px) {
   html {
     font-size: 16px;
+    overflow-x: hidden!important;
   }
 
   body {
-    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
   }
 
   .nav-links {

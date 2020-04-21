@@ -3,6 +3,7 @@ import "./css/gallery.css";
 import UserPanelTop from "./components/userpaneltop";
 import { Link } from "react-router-dom";
 import $ from "jquery";
+import UserView from "./components/userview";
 
 function Gallery() {
   $.ajax({
@@ -18,18 +19,20 @@ function Gallery() {
     for (var i = 0; i < obj.length; i++) {
       details +=
         `
-      <div class="card">
-      <div
-        class="card-body text-left"><p class="lead">` +
+        <div class="col-sm-4">
+        <div class="gcards-list">
+          <div class="gcard 1">
+            <div class="gcard_image">
+              <img src="./gallerycard.jpg" />
+            </div>
+            <div class="gcard_title title-white">
+              <p>` +
         obj[i].name +
-        `</p><a class="gallerylink" href="` +
-        obj[i].link +
-        `">Link Here
-        </a>
-        <p >Publish Date <span class="redtext">` +
-        obj[i].date +
-        `</span></p></div>
-    </div>
+        `</p>
+            </div>
+          </div>
+        </div>
+      </div>
         
   `;
     }
@@ -40,11 +43,12 @@ function Gallery() {
   return (
     <>
       <UserPanelTop />
+      <UserView />
       <div className="UserPanel">
         <div className="userpanellayout">
           <div className="usergrid">
             <div className="userlinks">
-              <ul className="userlinkslist">
+              <ul className="userlinkslist hideonmob">
                 <li>
                   <Link to="/usertask">Daily Task</Link>
                 </li>
@@ -58,8 +62,9 @@ function Gallery() {
             </div>
             <div className="loginform">
               <div className="dailytask">
-                <div className="ddates">Your Gallery</div>
-                <div id="gallerydivison">{""}</div>
+                <div className="row" id="gallerydivison">
+                  {""}
+                </div>
               </div>
             </div>
           </div>

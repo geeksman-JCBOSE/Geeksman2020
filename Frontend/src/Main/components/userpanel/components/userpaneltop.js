@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import $ from "jquery";
+import "../css/userview.css";
 import back from "./memtop.png";
 import ReactMarkdown from "react-markdown";
 import { useHistory } from "react-router-dom";
@@ -40,14 +41,14 @@ function UserPanelTop() {
             <div className="memtop-text">
               <p className="memtop-header">
                 <span>
-                  <ReactMarkdown source={user_name} escapeHtml={false} />
+                  <ReactMarkdown source={user_name} escapeHtml={true} />
                 </span>
               </p>
               <span className="memtop-tagline">Learn, Grow, Evolve</span>
             </div>
           </div>
           <div className="col-sm-2">
-            <div className="logoutbtns">
+            <div className="logoutbtns hideonmob">
               <a href="#" className="updatebtnstyle" onClick={handleLogout}>
                 Logout
               </a>

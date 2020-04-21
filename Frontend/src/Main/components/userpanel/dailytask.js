@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./css/dailytask.css";
 import { Link } from "react-router-dom";
 import $ from "jquery";
+import UserView from "./components/userview";
 import UserPanelTop from "./components/userpaneltop";
 
 function DailyTask() {
@@ -46,11 +47,12 @@ function DailyTask() {
   return (
     <>
       <UserPanelTop />
+      <UserView />
       <div className="UserPanel">
         <div className="userpanellayout">
           <div className="usergrid">
             <div className="userlinks">
-              <ul className="userlinkslist">
+              <ul className="userlinkslist hideonmob">
                 <li className="active">
                   <Link to="/usertask">Daily Task</Link>
                 </li>
