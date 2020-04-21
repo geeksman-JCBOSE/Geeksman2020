@@ -5,8 +5,10 @@
   color: #5c5b5b;
 }
 .timelinehr {
-  width: 40%;
+  width: 38%;
   margin-top: -0.5rem;
+  border: 0.1px solid gray;
+  margin-block-end: 0;
 }
 .timelineis {
   margin-top: 4rem;

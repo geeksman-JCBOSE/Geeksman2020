@@ -296,4 +296,24 @@ body {
     position: relative;
     margin-left: 3rem;
   }
+  .position {
+    background-color: goldenrod;
+    font-size: 1rem;
+
+    margin-top: -0.7rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+    color: white;
+  }
+  .mposition {
+    background-color: #5d4fff;
+    font-size: 1rem;
+
+    margin-top: -0.7rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+    color: white;
+  }
 }

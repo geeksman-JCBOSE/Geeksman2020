@@ -23,13 +23,20 @@ function Gallery() {
         <div class="gcards-list">
           <div class="gcard 1">
             <div class="gcard_image">
-              <img src="./gallerycard.jpg" />
+              <img src="https://i.ibb.co/rwQz7Qn/gallerycard.jpg" />
             </div>
-            <div class="gcard_title title-white">
-              <p>` +
+            
+            <p class="galleryname" >` +
         obj[i].name +
         `</p>
-            </div>
+        <p class="gallerydate" >` +
+        obj[i].date +
+        `</p>
+              <a class="gallerylink" href="` +
+        obj[i].link +
+        `">Follow Link</a>
+       
+            
           </div>
         </div>
       </div>

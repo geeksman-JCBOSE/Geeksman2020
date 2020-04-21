@@ -65,18 +65,6 @@ class Navbar extends React.Component {
           <div>
             <LoginForm />
           </div>
-
-          <div className="socialicons hidemobile">
-            <Link to="#">
-              <i class="fab fa-instagram social"></i>
-            </Link>
-            <Link to="#">
-              <i class="fab fa-github social"></i>
-            </Link>
-            <Link to="#">
-              <i class="fab fa-facebook social"></i>
-            </Link>
-          </div>
         </div>
       </div>
     );
