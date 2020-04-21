@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 function Timeline() {
   return (
     <div class="container timelineis">
+      <h1 className="timelineheading">our timeline</h1>
+      <hr className="timelinehr" />
       <div class="row">
         <div class="col-md-12">
           <div class="main-timeline5">

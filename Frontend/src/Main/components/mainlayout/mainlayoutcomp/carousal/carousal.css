@@ -1,88 +1,211 @@
-.videobox{
-    width: 100%;
-    height:100vh;
-    position: relative;;
-    
+.videobox {
+  width: 100%;
+  height: 83vh;
+  position: relative;
 }
-.carouswr{
+.carouswr {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  width: 102.2%;
+  height: 100vh;
+}
+.backimg {
+  height: 30%;
+  width: 26%;
+  margin-top: -5rem;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -2rem;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 91vh;
+  background: #111;
+}
+.videobox video {
+  position: absolute;
+  width: 94%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.carousel:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, blue, #ff68f2);
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+.textBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 7rem;
+  font-weight: 800;
+  mix-blend-mode: screen;
+  color: #000;
+  text-transform: uppercase;
+}
+.textBox span {
+  font-size: 2.4rem;
+  margin-top: -2rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+.secondbtn {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  background: white;
+  border-radius: 100px;
+  position: relative;
+  margin-top: 1.2rem;
+  color: black;
+  font-size: 1.5rem;
+  border: 2px solid black;
+  max-width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secondbtn,
+.second:link,
+.secondlist:active {
+  text-decoration: none !important;
+  overflow: hidden;
+  color: black;
+  border: 2px solid black;
+  background: #fff;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 1210px) {
+  .textBox {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 1200px) {
+  .carouswr {
+    width: 94%;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 620px) {
+  .carouswr {
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .carousel {
+    height: 100vh;
+  }
+  .textBox {
+    font-size: 4.2rem;
+  }
+  .textBox span {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 602px) {
+  .videobox {
+    width: 100%;
+    right: 30%;
+    width: 74vh;
+    height: 60vh;
+    position: relative;
+  }
+  .backimg {
+    height: 30%;
+    width: 38%;
+    margin-top: -4rem;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -2rem;
+  }
+  .carouswr {
     position: absolute;
-    top:30px;
+    top: 30px;
     left: 30px;
     right: 30px;
     bottom: 30px;
-    width: 95.2%;
+    width: 50%;
     height: 100vh;
-
-}
-.carousel{
+  }
+  .carousel {
     position: relative;
     width: 100%;
-    height:109vh;
-    background: #111;
-}
-.videobox video{
+    height: 68vh;
+  }
+  .videobox video {
     position: absolute;
     width: 100%;
-    height: 100%;
-    top: 0;
+    height: 59%;
+    top: 40%;
     left: 0;
+    right: 10%;
     object-fit: cover;
-}
-.carousel:after{
-    content: '';
+  }
+  .carousel:after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background:linear-gradient(45deg,blue,#ff68f2);
+    background: linear-gradient(45deg, rgb(2, 2, 99), #7268ff);
     pointer-events: none;
     mix-blend-mode: overlay;
-}
-.textBox{
+  }
+  .textBox {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 50%;
+    left: 10%;
+    width: 67%;
     height: 100%;
-    background: #fff;
+    background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 6.2rem;
+    font-size: 3.5rem;
     font-weight: 800;
     mix-blend-mode: screen;
-    color: #000;
+    color: black;
     text-transform: uppercase;
-}
-.textBox span{
-    font-size: 3.5rem;
-}
-@media only screen and (min-width:300px) and (max-width:1210px){
-    .textBox{
-        width: 100%;
-    }
-}
-@media only screen and (min-width:400px) and (max-width:1200px){
-    .carouswr{
-        width: 94%;
-    }
-}
-@media only screen and (min-width:200px) and (max-width:620px){
-    .carouswr{
-        width:100%;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-    }
-    .carousel{
-        height: 100vh;
-    }
-    .textBox{
-        font-size: 4.2rem;
-    }
-    .textBox span{
-        font-size: 2rem;
-    }
+  }
+  .textBox span {
+    font-size: 1.1rem;
+    margin-top: -1rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  .secondbtn {
+    display: inline-block;
+    padding: 0.6rem 0.7rem;
+    background: white;
+    border-radius: 100px;
+    position: relative;
+    margin-top: 1rem;
+    color: black;
+    font-size: 0.8rem;
+    border: 2px solid black;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

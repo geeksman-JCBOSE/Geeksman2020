@@ -3,6 +3,7 @@ import "./navbar.css";
 import LoginForm from "./loginform/loginform";
 import { Link, Navlink } from "react-router-dom";
 import image from "./icons/logo.png";
+
 class Navbar extends React.Component {
   componentDidMount() {}
   handleclick = () => {

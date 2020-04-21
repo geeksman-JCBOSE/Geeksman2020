@@ -1,3 +1,13 @@
+.timelineheading {
+  font-weight: 900;
+  font-size: 5rem;
+  margin-top: -2rem;
+  color: #5c5b5b;
+}
+.timelinehr {
+  width: 40%;
+  margin-top: -0.5rem;
+}
 .timelineis {
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -200,5 +210,15 @@
     left: 50%;
     z-index: -1;
     transform: translate(-50%, 0);
+  }
+  .timelineheading {
+    font-weight: 900;
+    font-size: 3.5rem;
+    margin-top: -2rem;
+    color: #5c5b5b;
+  }
+  .timelinehr {
+    width: 80%;
+    margin-top: -0.5rem;
   }
 }
