@@ -41,20 +41,10 @@ function LoginForm() {
       },
     });
   };
-  const handleLogout = () => {
-    setLogin(false);
-    window.$token = null;
-  };
+
   const loginbutton = (
     <div className="loginbtn">
       <Link to="#" onClick={handleShow}>
-        Login
-      </Link>
-    </div>
-  );
-  const logoutbutton = (
-    <div className="logoutbtn">
-      <Link to="#" onClick={handleLogout}>
         Login
       </Link>
     </div>

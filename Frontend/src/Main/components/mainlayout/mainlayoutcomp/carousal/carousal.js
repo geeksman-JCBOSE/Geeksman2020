@@ -8,7 +8,7 @@ class Carousal extends React.Component {
 
   render() {
     return (
-      <div className="carousel">
+      <div className="carouselx7">
         <div className="carouswr">
           <div className="videobox">
             <video
