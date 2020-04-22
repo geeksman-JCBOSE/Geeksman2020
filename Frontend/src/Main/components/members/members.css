@@ -283,7 +283,7 @@ body {
     transition: all 0.4s;
     backface-visibility: hidden;
     position: relative;
-    margin-left: 1.9rem;
+    margin-left: 0rem;
   }
   .dmcard {
     height: 20rem;
@@ -294,7 +294,7 @@ body {
     transition: all 0.4s;
     backface-visibility: hidden;
     position: relative;
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
   .position {
     background-color: goldenrod;
