@@ -33,9 +33,7 @@ const Alumni = () => {
                   </div>
                 </div>
                 <div className="carousel-cell">
-                  <div className="cellimb">
-                    <img src={alu} />
-                  </div>
+                  <img src={alu} />
 
                   <h3>
                     <i className="fas fa-quote-left"></i>

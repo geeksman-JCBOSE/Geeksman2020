@@ -1,6 +1,5 @@
 .online {
-  background: url("./3.jpg");
-  background-size: 40% 100%;
+  background-color: white;
 }
 .alumni {
   display: flex;
@@ -13,7 +12,7 @@
   color: #000;
   margin: 0;
   padding: 0;
-  background: gainsboro;
+  background: white;
 }
 .swiper-container {
   width: 100%;
@@ -36,10 +35,11 @@
   margin-block-end: 0;
 }
 .carousel {
-  background: grey;
+  background: rgb(241, 241, 241);
 }
 .carousel-wrapper {
   background: transparent;
+  box-shadow: none;
 }
 .imagealumni {
   width: 100%;
@@ -152,10 +152,7 @@
     color: rgb(228, 108, 72);
     margin-bottom: -2rem;
   }
-  .online {
-    background: url("./3.jpg");
-    background-size: 100% 100%;
-  }
+
   .alumni {
     display: block;
   }

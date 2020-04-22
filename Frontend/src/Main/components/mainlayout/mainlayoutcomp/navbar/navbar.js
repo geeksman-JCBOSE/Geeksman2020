@@ -45,7 +45,7 @@ class Navbar extends React.Component {
               <Link to="/members">members</Link>
             </li>
             <li>
-              <Link to="/">contact</Link>
+              <Link to="/developer">developers</Link>
             </li>
             <li>
               <a href="https://www.instagram.com/geeksmanymca/">
