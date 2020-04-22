@@ -122,13 +122,6 @@
   }
 }
 @media screen and (max-width: 602px) {
-  .videobox {
-    width: 100%;
-    right: 30%;
-    width: 67vh;
-    height: 60vh;
-    position: relative;
-  }
   .backimg {
     height: 30%;
     width: 38%;
@@ -172,22 +165,7 @@
     pointer-events: none;
     mix-blend-mode: overlay;
   }
-  .textBox {
-    position: absolute;
-    top: 0;
-    left: 10%;
-    width: 67%;
-    height: 100%;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 3.5rem;
-    font-weight: 800;
-    mix-blend-mode: screen;
-    color: black;
-    text-transform: uppercase;
-  }
+
   .textBox span {
     font-size: 1.1rem;
     margin-top: -1rem;
@@ -207,5 +185,168 @@
     max-width: 30%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/*===========Different Mobiles=========== */
+/*==========S5============ */
+@media only screen and (max-width: 365px) and (min-width: 340px) {
+  .textBox {
+    position: absolute;
+    margin-top: -0.5rem;
+    left: 10%;
+    width: 100%;
+    height: 103%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+    mix-blend-mode: screen;
+    color: black;
+    text-transform: uppercase;
+  }
+  .videobox {
+    width: 100%;
+    right: 30%;
+    width: 52.4vh;
+    height: 60vh;
+    position: relative;
+  }
+}
+/*===========iphone SE=========== */
+@media only screen and (max-width: 340px) and (min-width: 300px) {
+  .textBox {
+    position: absolute;
+    margin-top: -0.5rem;
+    left: 10%;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 800;
+    mix-blend-mode: screen;
+    color: black;
+    text-transform: uppercase;
+  }
+  .videobox {
+    width: 100%;
+    right: 30%;
+    width: 51.5vh;
+    height: 60vh;
+    position: relative;
+  }
+}
+/*===========iphone X,6,7,8=========== */
+@media only screen and (max-width: 388px) and (min-width: 365px) {
+  .textBox {
+    position: absolute;
+    margin-top: -0.5rem;
+    left: 10%;
+    width: 100%;
+    height: 103%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: 800;
+    mix-blend-mode: screen;
+    color: black;
+    text-transform: uppercase;
+  }
+  .videobox {
+    width: 100%;
+    right: 30%;
+    width: 52.5vh;
+    height: 60vh;
+    position: relative;
+  }
+}
+/*===========pixel x2=========== */
+@media only screen and (max-width: 500px) and (min-width: 388px) {
+  .textBox {
+    position: absolute;
+    margin-top: -0.5rem;
+    left: 10%;
+    width: 100%;
+    height: 103%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: 800;
+    mix-blend-mode: screen;
+    color: black;
+    text-transform: uppercase;
+  }
+  .videobox {
+    width: 100%;
+    right: 30%;
+    width: 53vh;
+    height: 60vh;
+    position: relative;
+  }
+}
+/*===========b/w pixel 2 and ipad=========== */
+@media only screen and (max-width: 650px) and (min-width: 500px) {
+}
+/*===========ipad=========== */
+@media only screen and (max-width: 800px) and (min-width: 650px) {
+}
+/*===========iphone x=========== */
+@media only screen and (max-height: 900px) and (min-height: 800px) and (max-width: 388px) and (min-width: 365px) {
+  .textBox {
+    position: absolute;
+    margin-top: -0.5rem;
+    left: 10%;
+    width: 100%;
+    height: 105%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: 800;
+    mix-blend-mode: screen;
+    color: black;
+    text-transform: uppercase;
+  }
+  .videobox {
+    width: 100%;
+    right: 30%;
+    width: 43.5vh;
+    height: 60vh;
+    position: relative;
+  }
+}
+@media only screen and (max-height: 900px) and (min-height: 800px) and (max-width: 500px) and (min-width: 388px) {
+  .textBox {
+    position: absolute;
+    margin-top: -0.5rem;
+    left: 10%;
+    width: 100%;
+    height: 105%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: 800;
+    mix-blend-mode: screen;
+    color: black;
+    text-transform: uppercase;
+  }
+  .videobox {
+    width: 100%;
+    right: 30%;
+    width: 47vh;
+    height: 60vh;
+    position: relative;
   }
 }

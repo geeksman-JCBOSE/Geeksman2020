@@ -57,13 +57,13 @@ class Navbar extends React.Component {
               <i class="fab fa-facebook social hidepc"></i>
             </li>
           </ul>
+          <div>
+            <LoginForm />
+          </div>
           <div className="burger" onClick={this.handleclick}>
             <div className="line1"></div>
             <div className="line2"></div>
             <div className="line3"></div>
-          </div>
-          <div>
-            <LoginForm />
           </div>
         </div>
       </div>

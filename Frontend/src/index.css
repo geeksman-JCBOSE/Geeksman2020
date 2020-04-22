@@ -13,6 +13,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.loginbtn {
+  position: relative;
+  margin-left: 50rem;
+}
 @media only screen and (max-width: 500px) {
   body {
     margin: 0;
@@ -25,5 +29,96 @@ code {
   }
   .html {
     overflow-x: hidden !important;
+  }
+}
+/*===========Different Mobiles=========== */
+/*==========S5============ */
+@media only screen and (max-width: 365px) and (min-width: 340px) {
+  .loginbtn {
+    position: relative;
+    margin-left: 8rem;
+  }
+  .textBox {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: 800;
+    mix-blend-mode: screen;
+    color: black;
+    text-transform: uppercase;
+  }
+}
+/*===========iphone SE=========== */
+@media only screen and (max-width: 340px) and (min-width: 300px) {
+  .loginbtn {
+    position: relative;
+    margin-left: 6rem;
+  }
+  .textBox {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 67%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: 800;
+    mix-blend-mode: screen;
+    color: black;
+    text-transform: uppercase;
+  }
+}
+/*===========iphone X,6,7,8=========== */
+@media only screen and (max-width: 388px) and (min-width: 365px) {
+  .loginbtn {
+    position: relative;
+    margin-left: 9rem;
+  }
+}
+/*===========pixel x2=========== */
+@media only screen and (max-width: 500px) and (min-width: 388px) {
+  .loginbtn {
+    position: relative;
+    margin-left: 11rem;
+  }
+  .textBox {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 67%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-weight: 800;
+    mix-blend-mode: screen;
+    color: black;
+    text-transform: uppercase;
+  }
+}
+/*===========b/w pixel 2 and ipad=========== */
+@media only screen and (max-width: 650px) and (min-width: 500px) {
+  .loginbtn {
+    position: relative;
+    margin-left: 11rem;
+  }
+}
+/*===========ipad=========== */
+@media only screen and (max-width: 800px) and (min-width: 650px) {
+  .loginbtn {
+    position: relative;
+    margin-left: 31rem;
   }
 }

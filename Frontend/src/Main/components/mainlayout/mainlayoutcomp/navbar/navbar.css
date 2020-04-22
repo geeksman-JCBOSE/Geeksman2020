@@ -5,6 +5,7 @@ html {
   overflow-x: hidden !important;
   position: relative;
 }
+
 @media only screen and (max-width: 600px) {
   html {
     font-size: 12px;
@@ -66,8 +67,7 @@ html {
   color: #bfe7fa;
 }
 .loginbtn {
-  position: relative;
-  margin-left: 50rem;
+  display: flex;
 }
 .loginbtn a {
   border: 1.2px solid gold;
@@ -178,6 +178,7 @@ html {
   .nav-links {
     position: absolute;
     right: 0;
+    background-size: 67vh;
     display: flex;
     height: 92vh;
     flex-direction: column;
@@ -187,11 +188,6 @@ html {
     transition: transform 0.5s ease-in;
     background-image: url("./icons/navbarbackground.jpg");
     z-index: 4;
-  }
-
-  .loginbtn {
-    position: relative;
-    margin-left: 8rem;
   }
 
   .nav-links li {

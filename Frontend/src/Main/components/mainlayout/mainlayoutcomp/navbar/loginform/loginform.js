@@ -52,7 +52,7 @@ function LoginForm() {
 
   return (
     <>
-      <div className="navbutton">{loginbutton}</div>
+      <div>{loginbutton}</div>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <span className="lead">Login</span>
