@@ -5,48 +5,82 @@ import $ from "jquery";
 import UserView from "./components/userview";
 import ReactMarkdown from "react-markdown";
 import UserPanelTop from "./components/userpaneltop";
+import { Alert } from "react-bootstrap";
+
 function UpdateUser() {
-  const [first_name, setFirst_name] = useState("");
-  const [last_name, setLast_name] = useState("");
+  const [first_name, setFirst_name] = useState(localStorage.getItem("f_name"));
+  const [last_name, setLast_name] = useState(localStorage.getItem("l_name"));
   const [year, setYear] = useState("");
   const [tagline, setTagline] = useState("");
   const [branch, setBranch] = useState("");
   const [address, setAddress] = useState("");
+  const [skill, setSkill] = useState("");
+  const [picture, setPicture] = useState("");
   const [description, setDescription] = useState("");
   const [phone_no, setPhone_no] = useState("");
-  const [github_account, setGithub_account] = useState("");
-  const [linkedln_account, setLinkedln_account] = useState("");
+  const [github_account, setGithub_account] = useState(null);
+  const [linkedln_account, setLinkedln_account] = useState(null);
   const [status, setStatus] = useState("");
+  const [alertcolor, setAlertcolor] = useState("light");
+
   const handlePost = (e) => {
-    $.ajax({
-      url: localStorage.getItem("userurl"),
-      type: "PATCH",
-      crossDomain: true,
-      dataType: "json",
-      contentType: "application/json; charset=utf-8",
-      cache: false,
-      headers: {
-        Authorization: "Token " + localStorage.getItem("token"),
-      },
-      data: JSON.stringify({
-        phone_number: phone_no,
-        tagline: tagline,
-        github: github_account,
-        linkedin: linkedln_account,
-        year: year,
-        address: address,
-        description: description,
-      }),
-      contentType: "application/json",
-      success: function (data) {
-        setStatus("Details Updated Successfully");
-        alert(status);
-      },
-      error: function () {
-        setStatus("Sorry Error Occured");
-        alert(status);
-      },
-    });
+    console.log(skill);
+    if (branch === "") {
+      setStatus("fill branch");
+      setAlertcolor("danger");
+    } else if (phone_no.length != 10) {
+      setStatus("Enter Valid Phone Number");
+      setAlertcolor("danger");
+    } else if (tagline === "") {
+      setStatus("fill tagline");
+      setAlertcolor("danger");
+    } else if (address === "") {
+      setStatus("fill address");
+      setAlertcolor("danger");
+    } else if (year === "") {
+      setStatus("fill year");
+      setAlertcolor("danger");
+    } else if (skill === "") {
+      setStatus("fill skills");
+      setAlertcolor("danger");
+    } else if (picture === "" || picture[picture.length - 1] !== "h") {
+      setStatus("fill correct picture url");
+      setAlertcolor("danger");
+    } else {
+      $.ajax({
+        url: localStorage.getItem("userurl"),
+        type: "PATCH",
+        crossDomain: true,
+        dataType: "json",
+        contentType: "application/json; charset=utf-8",
+        cache: false,
+        headers: {
+          Authorization: "Token " + localStorage.getItem("token"),
+        },
+        data: JSON.stringify({
+          phone_number: phone_no,
+          tagline: tagline,
+          year: year,
+          address: address,
+          description: description,
+          skills: [skill],
+          pic: picture,
+          branch: branch,
+          github: github_account,
+          linkedin: linkedln_account,
+        }),
+        contentType: "application/json",
+        success: function (data) {
+          setStatus("Details Updated Successfully");
+          setAlertcolor("success");
+          alert("success");
+        },
+        error: function () {
+          setStatus("Sorry Error Occured Check Pic Url");
+          setAlertcolor("danger");
+        },
+      });
+    }
   };
 
   return (
@@ -81,8 +115,8 @@ function UpdateUser() {
                         type="text"
                         className="form-control"
                         placeholder="First name"
-                        onChange={(e) => setFirst_name(e.target.value)}
                         value={first_name}
+                        disabled
                       />
                     </div>
                     <div className="col-sm-6 namefield">
@@ -93,8 +127,8 @@ function UpdateUser() {
                         type="text"
                         className="form-control"
                         placeholder="Last name"
-                        onChange={(e) => setLast_name(e.target.value)}
                         value={last_name}
+                        disabled
                       />
                     </div>
                   </div>
@@ -131,16 +165,28 @@ function UpdateUser() {
                       </select>
                     </div>
                     <div className="col-sm-6 namefield">
-                      <for label="branch" className="labels">
+                      <for label="year" className="labels">
                         Branch
                       </for>
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Eg - ECE"
+
+                      <select
+                        id="inputState"
+                        class="form-control"
                         onChange={(e) => setBranch(e.target.value)}
                         value={branch}
-                      />
+                      >
+                        <option selected value="CE">
+                          CE
+                        </option>
+                        <option value="IT">IT</option>
+                        <option value="ECE">ECE</option>
+                        <option value="ECS">ECS</option>
+                        <option value="Mech">Mech</option>
+                        <option value="El">El</option>
+                        <option value="Civil">Civil</option>
+                        <option value="BSC">BSC</option>
+                        <option value="MSC">MSC</option>
+                      </select>
                     </div>
                   </div>
 
@@ -201,11 +247,43 @@ function UpdateUser() {
                       />
                     </div>
                   </div>
-                  <ReactMarkdown
-                    className="Statustext text-center"
-                    source={status}
-                    escapeHtml={false}
+
+                  <for label="year" className="labels">
+                    Skills
+                  </for>
+
+                  <select
+                    id="inputState"
+                    class="form-control"
+                    onChange={(e) => setSkill(e.target.value)}
+                    value={skill}
+                  >
+                    <option selected value="10">
+                      competitive
+                    </option>
+                    <option value="11">web(frontend)</option>
+                    <option value="12">web(backend)</option>
+                    <option value="13">ML</option>
+                    <option value="14">Android</option>
+                    <option value="15">Others</option>
+                  </select>
+                  <for label="address" className="labels">
+                    Pic Url
+                  </for>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Eg- https://aayush.pic.jpg"
+                    onChange={(e) => setPicture(e.target.value)}
+                    value={picture}
                   />
+                  <div id="alertdiv">
+                    {" "}
+                    <Alert variant={alertcolor}>
+                      <ReactMarkdown source={status} escapeHtml={true} />
+                    </Alert>
+                  </div>
+
                   <div className="updatebtn">
                     <Link
                       href="#"

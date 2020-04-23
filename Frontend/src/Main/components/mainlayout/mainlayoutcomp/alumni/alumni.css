@@ -2,7 +2,6 @@
   background-color: white;
 }
 
-
 .swiper-container {
   width: 100%;
   padding-top: 50px;
@@ -46,17 +45,14 @@
 .alumnihead h1 {
   font-weight: 900;
   font-size: 5rem;
-  margin-top: 1rem;
+  margin-top: 4rem;
   color: rgb(228, 108, 72);
-  margin-bottom: -1.1rem;
+  margin-bottom: -3rem;
 }
-
 
 .quotes {
   font-size: 1.2rem;
 }
-
-
 
 .alumniheader {
   margin: 4rem 0;
@@ -114,11 +110,10 @@
   .alumnihead h1 {
     font-weight: 900;
     font-size: 2.8rem;
-    margin-top: 1rem;
+    margin-top: 3.4rem;
     color: rgb(228, 108, 72);
-    margin-bottom: -2rem;
+    margin-bottom: -2.7rem;
   }
-
 
   .alumnihr2 {
     width: 90%;
@@ -176,7 +171,7 @@
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   background-image: linear-gradient(#ffffff 50%, #ffffff 50%, #f0f3fc 50%);
- 
+
   overflow: hidden;
 }
 .carousel-wrapper .carousel {

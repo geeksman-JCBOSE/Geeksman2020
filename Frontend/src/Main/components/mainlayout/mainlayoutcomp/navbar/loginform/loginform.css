@@ -21,8 +21,14 @@
   font-size: 14px;
 }
 .Statustext {
-  color: #5d4fff;
+  color: green;
   font-size: 1rem;
+  text-align: center;
+}
+.Statustextred {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
 }
 .form button {
   font-family: "Roboto", sans-serif;

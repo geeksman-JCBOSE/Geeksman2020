@@ -110,24 +110,33 @@
     left: 0;
     bottom: 0;
     right: 0;
+    height: 100vh;
   }
-  .videobox{height: 100%;}
+  .videobox {
+    height: 100%;
+    width: 100%;
+  }
+  .videobox video {
+    width: 100%;
+  }
   .carouselx7 {
     height: 100vh;
   }
   .textBox {
-    font-size: 3.8rem;
+    font-size: 3.3rem;
+    width: 100%;
+    height: 70%;
+    margin-top: 18%;
   }
   .textBox span {
-    font-size: 1.8rem;
-    margin-top: 1rem;
+    font-size: 1.2rem;
+    margin-top: 0rem;
   }
-  .backimg{
+  .backimg {
     width: 38%;
   }
-  .secondbtn{
-    font-size: 1.1rem;
-    max-width: 36%;
+  .secondbtn {
+    font-size: 1rem;
+    max-width: 40%;
   }
 }
-

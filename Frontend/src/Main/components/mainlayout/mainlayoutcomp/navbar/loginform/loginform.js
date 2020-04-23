@@ -12,6 +12,7 @@ function LoginForm() {
   const [loginstat, setLoginstat] = useState(" ");
   const [user_name, setUser_name] = useState("");
   const [pwd, setPwd] = useState("");
+  const [alertcss, setAlertcss] = useState("");
   const [login, setLogin] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -35,9 +36,11 @@ function LoginForm() {
         localStorage.setItem("token", tokenis);
         history.push("./usergallery");
         setLogin(true);
+        setAlertcss("Statustext");
       },
       error: function () {
         setLoginstat("Retry Again");
+        setAlertcss("Statustextred");
       },
     });
   };
@@ -80,7 +83,7 @@ function LoginForm() {
             </form>
           </div>
           <ReactMarkdown
-            className="Statustext text-center"
+            className={alertcss}
             source={loginstat}
             escapeHtml={false}
           />

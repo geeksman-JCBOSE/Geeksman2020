@@ -26,6 +26,8 @@ function UserPanelTop() {
     success: function (data) {
       setUser_name(data[0].user.first_name + "'s Panel");
       localStorage.setItem("userurl", data[0].url);
+      localStorage.setItem("f_name", data[0].user.first_name);
+      localStorage.setItem("l_name", data[0].user.last_name);
     },
     error: function () {
       setUser_name("Please Login");

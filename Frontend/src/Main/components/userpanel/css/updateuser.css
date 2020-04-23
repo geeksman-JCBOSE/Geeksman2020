@@ -7,6 +7,9 @@
 .userform {
   background: white;
 }
+#alertdiv {
+  margin-top: 2rem;
+}
 .form-control {
   max-width: 80%;
   margin-top: 0.3rem;

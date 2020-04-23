@@ -1,8 +1,8 @@
 import React from "react";
 import "./alumni.css";
 import pic1 from "./pic1.jpg";
-import pic2 from "./pic2.jpg"
-import pic3 from "./pic3.jpg"
+import pic2 from "./pic2.jpg";
+import pic3 from "./pic3.jpg";
 
 const Alumni = () => {
   return (
@@ -28,7 +28,7 @@ const Alumni = () => {
                     like to do this
                     <hr className="alumnihr" />
                   </p>
-                  <h5>WORK COMPANY</h5>
+                  <h5>AMAZON</h5>
                   <div class="line"></div>
                   <div class="price">
                     <span>Manmeet</span>
@@ -45,7 +45,7 @@ const Alumni = () => {
                     like to do this
                     <hr className="alumnihr" />
                   </p>
-                  <h5>WORK COMPANY</h5>
+                  <h5>DIRECTI</h5>
                   <div className="line"></div>
                   <div className="price">
                     <span>Kashish</span>
@@ -62,7 +62,7 @@ const Alumni = () => {
                     like to do this
                     <hr className="alumnihr" />
                   </p>
-                  <h5>WORK COMPANY</h5>
+                  <h5>AMAZON</h5>
                   <div class="line"></div>
                   <div class="price">
                     <span>Sahil Singla</span>
@@ -79,7 +79,7 @@ const Alumni = () => {
                     like to do this
                     <hr className="alumnihr" />
                   </p>
-                  <h5>WORK COMPANY</h5>
+                  <h5>SAMSUNG</h5>
                   <div class="line"></div>
                   <div class="price">
                     <span>Trilok</span>
