@@ -63,7 +63,9 @@
     font-size: 3rem;
     font-weight: 800;
     color: #d8d8d8;
-    padding-left: 2.4rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 2rem;
   }
 
@@ -90,7 +92,7 @@
   .aboutcontent {
     color: rgb(255, 255, 255);
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.73rem;
     letter-spacing: 1px;
     font-family: "Raleway", sans-serif;
     padding-right: 1.6rem;
