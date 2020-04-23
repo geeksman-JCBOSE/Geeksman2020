@@ -21,7 +21,7 @@
 }
 .aboutdiv {
   background: url("./aboutbackground.png");
-  background-size: 100% 150%;
+  background-size: cover;
   height: 100vh;
 }
 .aboutcontent {
@@ -63,7 +63,7 @@
     font-size: 3rem;
     font-weight: 800;
     color: #d8d8d8;
-    padding-left: 1rem;
+    padding-left: 2.4rem;
     margin-top: 2rem;
   }
 
@@ -77,7 +77,7 @@
   .aboutdiv {
     background: url("./aboutbackground.png");
     background-position: 50% 0%;
-    background-size: 780px 643px;
+    background-size: cover;
     height: 100vh;
   }
   .hidemob {
@@ -90,7 +90,7 @@
   .aboutcontent {
     color: rgb(255, 255, 255);
     font-weight: 600;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     letter-spacing: 1px;
     font-family: "Raleway", sans-serif;
     padding-right: 1.6rem;
@@ -98,7 +98,7 @@
   }
   .wecode {
     font-family: "Major Mono Display", monospace;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .contentdiv {
     margin-right: 0rem;

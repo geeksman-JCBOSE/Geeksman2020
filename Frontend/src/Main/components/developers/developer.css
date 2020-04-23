@@ -37,7 +37,7 @@ img {
 }
 .card {
   position: relative;
-  background: transparent;
+  background: #333;
   width: 330px;
   height: 62vh;
   border-radius: 6px;
@@ -149,8 +149,16 @@ img {
     border-top: 1px solid white;
   }
   .card {
+    position: relative;
+    background: #333;
     width: 330px;
     height: 62vh;
-    margin-right: 0.7rem;
+    border-radius: 6px;
+    padding: 2rem;
+    color: #aaa;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2),
+      0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-right: 0.75rem;
   }
 }
