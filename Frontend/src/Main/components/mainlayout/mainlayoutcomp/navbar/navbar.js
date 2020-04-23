@@ -47,15 +47,7 @@ class Navbar extends React.Component {
             <li>
               <Link to="/developer">developers</Link>
             </li>
-            <li>
-              <a href="https://www.instagram.com/geeksmanymca/">
-                <i class="fab fa-instagram social hidepc"></i>
-              </a>
-              <a href="https://github.com/aayushme">
-                <i class="fab fa-github social hidepc"></i>
-              </a>
-              <i class="fab fa-facebook social hidepc"></i>
-            </li>
+        
           </ul>
           <div>
             <LoginForm />

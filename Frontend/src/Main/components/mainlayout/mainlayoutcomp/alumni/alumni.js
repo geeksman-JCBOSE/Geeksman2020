@@ -1,6 +1,8 @@
 import React from "react";
 import "./alumni.css";
-import alu from "./IMG_1010.JPG";
+import pic1 from "./pic1.jpg";
+import pic2 from "./pic2.jpg"
+import pic3 from "./pic3.jpg"
 
 const Alumni = () => {
   return (
@@ -16,7 +18,7 @@ const Alumni = () => {
             <div className="carousel-wrapper">
               <div className="carousel" data-flickity>
                 <div className="carousel-cell">
-                  <img src={alu} className="imagealumni" />
+                  <img src={pic1} className="imagealumni" />
 
                   <h3>
                     <i class="fas fa-quote-left"></i>
@@ -29,11 +31,11 @@ const Alumni = () => {
                   <h5>WORK COMPANY</h5>
                   <div class="line"></div>
                   <div class="price">
-                    <span>Parag Thakur</span>
+                    <span>Manmeet</span>
                   </div>
                 </div>
                 <div className="carousel-cell">
-                  <img src={alu} />
+                  <img src={pic2} />
 
                   <h3>
                     <i className="fas fa-quote-left"></i>
@@ -46,13 +48,11 @@ const Alumni = () => {
                   <h5>WORK COMPANY</h5>
                   <div className="line"></div>
                   <div className="price">
-                    <span>Parag Thakur</span>
+                    <span>Kashish</span>
                   </div>
                 </div>
                 <div className="carousel-cell">
-                  <div className="cellimb">
-                    <img src={alu} />
-                  </div>
+                  <img src={pic3} className="imagealumni" />
 
                   <h3>
                     <i class="fas fa-quote-left"></i>
@@ -63,15 +63,13 @@ const Alumni = () => {
                     <hr className="alumnihr" />
                   </p>
                   <h5>WORK COMPANY</h5>
-                  <div className="line"></div>
-                  <div className="price">
-                    <span>Parag Thakur</span>
+                  <div class="line"></div>
+                  <div class="price">
+                    <span>Sahil Singla</span>
                   </div>
                 </div>
                 <div className="carousel-cell">
-                  <div className="cellimb">
-                    <img src={alu} />
-                  </div>
+                  <img src={pic3} className="imagealumni" />
 
                   <h3>
                     <i class="fas fa-quote-left"></i>
@@ -82,9 +80,9 @@ const Alumni = () => {
                     <hr className="alumnihr" />
                   </p>
                   <h5>WORK COMPANY</h5>
-                  <div className="line"></div>
-                  <div className="price">
-                    <span>Parag Thakur</span>
+                  <div class="line"></div>
+                  <div class="price">
+                    <span>Trilok</span>
                   </div>
                 </div>
               </div>

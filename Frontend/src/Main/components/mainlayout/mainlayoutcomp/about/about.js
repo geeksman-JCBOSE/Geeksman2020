@@ -36,10 +36,7 @@ class About extends React.Component {
                 of the college (currently placed in giant MNC's like Samsung,
                 Amazon , Directi) with a moto of developing the environment of
                 competetive programming and to develop the art of problem
-                solving among students. We at geeksman, are the most civilised
-                people in the world of coding. Got an idea what the real geeks
-                are like? if this drives you crazy ? your place is definitely in
-                our club. Welkom!!!
+                solving among students. 
               </p>
             </div>
           </div>
