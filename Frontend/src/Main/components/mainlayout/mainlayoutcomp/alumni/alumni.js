@@ -3,7 +3,7 @@ import "./alumni.css";
 import pic1 from "./pic1.jpg";
 import pic2 from "./pic2.jpg";
 import pic3 from "./pic3.jpg";
-
+import pic4 from "./trilok.jpeg";
 const Alumni = () => {
   return (
     <div className="alumnidiv">
@@ -24,14 +24,13 @@ const Alumni = () => {
                     <i class="fas fa-quote-left"></i>
                   </h3>
                   <p>
-                    Hey,I am this and my name is this and i do this and i would
-                    like to do this
+                    A hardworking and a passionate human being.
                     <hr className="alumnihr" />
                   </p>
                   <h5>AMAZON</h5>
                   <div class="line"></div>
                   <div class="price">
-                    <span>Manmeet</span>
+                    <span>Manmeet Kalirawana</span>
                   </div>
                 </div>
                 <div className="carousel-cell">
@@ -41,8 +40,7 @@ const Alumni = () => {
                     <i className="fas fa-quote-left"></i>
                   </h3>
                   <p>
-                    Hey,I am this and my name is this and i do this and i would
-                    like to do this
+                    A five star coder and a down to earth human being.
                     <hr className="alumnihr" />
                   </p>
                   <h5>DIRECTI</h5>
@@ -58,8 +56,7 @@ const Alumni = () => {
                     <i class="fas fa-quote-left"></i>
                   </h3>
                   <p>
-                    Hey,I am this and my name is this and i do this and i would
-                    like to do this
+                    Our founding member, who is pro in everything
                     <hr className="alumnihr" />
                   </p>
                   <h5>AMAZON</h5>
@@ -69,14 +66,13 @@ const Alumni = () => {
                   </div>
                 </div>
                 <div className="carousel-cell">
-                  <img src={pic3} className="imagealumni" />
+                  <img src={pic4} className="imagealumni" />
 
                   <h3>
                     <i class="fas fa-quote-left"></i>
                   </h3>
                   <p>
-                    Hey,I am this and my name is this and i do this and i would
-                    like to do this
+                    The person behind the idea of geeksman
                     <hr className="alumnihr" />
                   </p>
                   <h5>SAMSUNG</h5>

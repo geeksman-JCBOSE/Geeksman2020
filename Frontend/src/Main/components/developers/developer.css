@@ -37,7 +37,7 @@ img {
 }
 .card {
   position: relative;
-  background: #333;
+  background: transparent;
   width: 330px;
   height: 62vh;
   border-radius: 6px;
@@ -51,7 +51,7 @@ img {
 }
 .card__content h2 {
   font-size: 1.5rem;
-  padding-top: .6rem;
+  padding-top: 0.6rem;
 }
 .card__line {
   opacity: 0;
@@ -134,11 +134,11 @@ img {
 @media only screen and (max-width: 500px) {
   .developers {
     background: url("./3.jpg");
-    background-size: 100% 100%;
+    background-size: 300% 100%;
   }
   .developerhead h1 {
     font-weight: 900;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     color: #5c5b5b;
     padding-top: 4rem;
     color: white;
@@ -147,5 +147,10 @@ img {
     width: 70%;
     margin-top: -0.2rem;
     border-top: 1px solid white;
+  }
+  .card {
+    width: 330px;
+    height: 62vh;
+    margin-right: 0.7rem;
   }
 }

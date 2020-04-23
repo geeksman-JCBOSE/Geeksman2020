@@ -65,21 +65,21 @@ class Members extends React.Component {
             obj[i].address +
             `</div>
                     <div class="icons">
-                      <Link to="` +
+                      <a href="` +
             obj[i].github +
             `">
                         <i class="fab fa-github"></i>
-                      </Link>
-                      <Link to="` +
+                      </a>
+                      <a href="` +
             obj[i].linkedin +
             `">
                         <i class="fab fa-linkedin"></i>
-                      </Link>
-                      <Link to="` +
+                      </a>
+                      <a href="` +
             obj[i].user.email +
             `">
                         <i class="fas fa-envelope-open-text"></i>
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -132,21 +132,21 @@ class Members extends React.Component {
             obj[i].address +
             `</div>
                     <div class="icons">
-                      <Link to="` +
+                      <a href="` +
             obj[i].github +
             `">
                         <i class="fab fa-github"></i>
-                      </Link>
-                      <Link to="` +
+                      </a>
+                      <a href="` +
             obj[i].linkedin +
             `">
                         <i class="fab fa-linkedin"></i>
-                      </Link>
-                      <Link to="` +
+                      </a>
+                      <a href="` +
             obj[i].user.email +
             `">
                         <i class="fas fa-envelope-open-text"></i>
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>

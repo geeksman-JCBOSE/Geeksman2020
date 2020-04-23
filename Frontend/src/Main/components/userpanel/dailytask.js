@@ -3,6 +3,7 @@ import "./css/dailytask.css";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 import UserView from "./components/userview";
+import Navbar from "../mainlayout/mainlayoutcomp/navbar/navbar";
 import UserPanelTop from "./components/userpaneltop";
 
 function DailyTask() {
@@ -46,6 +47,7 @@ function DailyTask() {
     new Date().getDate();
   return (
     <>
+      <Navbar />
       <UserPanelTop />
       <UserView />
       <div className="UserPanel">

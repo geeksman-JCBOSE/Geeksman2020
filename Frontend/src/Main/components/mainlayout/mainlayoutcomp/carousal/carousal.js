@@ -21,7 +21,7 @@ class Carousal extends React.Component {
             <div className="textBox">
               <img src={back} className="backimg" />
               Geeksman <span>We Code Therefore We Are</span>
-              <Link to="#" className="secondbtn">
+              <Link to="/members" className="secondbtn">
                 OUR TEAM
               </Link>
             </div>

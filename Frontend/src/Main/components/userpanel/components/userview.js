@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import "../css/userview.css";
 import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
-function UserView() {
-  const history = useHistory();
-  const handleLogout = () => {
-    history.push("/");
-  };
 
+function UserView() {
   return (
     <>
       <div className="hideonpc">
@@ -21,11 +16,6 @@ function UserView() {
             </li>
             <li className="listitems">
               <Link to="/userupdate">update User</Link>
-            </li>
-            <li className="listitems logout">
-              <Link to="" onClick={handleLogout}>
-                Logout
-              </Link>
             </li>
           </ul>
         </div>

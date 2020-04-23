@@ -3,6 +3,7 @@ import "./css/gallery.css";
 import UserPanelTop from "./components/userpaneltop";
 import { Link } from "react-router-dom";
 import $ from "jquery";
+import Navbar from "../mainlayout/mainlayoutcomp/navbar/navbar";
 import UserView from "./components/userview";
 
 function Gallery() {
@@ -49,6 +50,7 @@ function Gallery() {
 
   return (
     <>
+      <Navbar />
       <UserPanelTop />
       <UserView />
       <div className="UserPanel">

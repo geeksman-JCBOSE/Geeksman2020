@@ -6,11 +6,7 @@ import ReactMarkdown from "react-markdown";
 import { useHistory } from "react-router-dom";
 function UserPanelTop() {
   const [user_name, setUser_name] = useState("");
-  const history = useHistory();
-  const handleLogout = () => {
-    history.push("/");
-    localStorage.clear();
-  };
+
   $.ajax({
     url: "https://geeksman.herokuapp.com/api/members/?single=true",
     type: "GET",
@@ -49,13 +45,7 @@ function UserPanelTop() {
               <span className="memtop-tagline">Learn, Grow, Evolve</span>
             </div>
           </div>
-          <div className="col-sm-2">
-            <div className="logoutbtns hideonmob">
-              <a href="#" className="updatebtnstyle" onClick={handleLogout}>
-                Logout
-              </a>
-            </div>
-          </div>
+          <div className="col-sm-2"></div>
         </div>
       </div>
     </>

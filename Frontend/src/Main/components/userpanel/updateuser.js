@@ -5,6 +5,7 @@ import $ from "jquery";
 import UserView from "./components/userview";
 import ReactMarkdown from "react-markdown";
 import UserPanelTop from "./components/userpaneltop";
+import Navbar from "../mainlayout/mainlayoutcomp/navbar/navbar";
 import { Alert } from "react-bootstrap";
 
 function UpdateUser() {
@@ -85,6 +86,7 @@ function UpdateUser() {
 
   return (
     <>
+      <Navbar />
       <UserPanelTop />
       <UserView />
       <div className="UserPanel">

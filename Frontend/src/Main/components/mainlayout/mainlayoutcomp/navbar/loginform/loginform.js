@@ -16,6 +16,10 @@ function LoginForm() {
   const [login, setLogin] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const handleLogout = () => {
+    localStorage.clear();
+    history.push("/members");
+  };
   const handleLogin = (e) => {
     e.preventDefault();
     $.ajax({
@@ -34,6 +38,7 @@ function LoginForm() {
         var tokenis = data.token;
         setLoginstat("Welcome User Redirecting....");
         localStorage.setItem("token", tokenis);
+        localStorage.setItem("loginstat", "true");
         history.push("./usergallery");
         setLogin(true);
         setAlertcss("Statustext");
@@ -44,18 +49,28 @@ function LoginForm() {
       },
     });
   };
-
-  const loginbutton = (
-    <div className="loginbtn">
-      <Link to="#" onClick={handleShow}>
-        Login
-      </Link>
-    </div>
-  );
+  var navbutton;
+  if (localStorage.getItem("loginstat") !== "true") {
+    navbutton = (
+      <div className="loginbtn">
+        <Link to="#" onClick={handleShow}>
+          Login
+        </Link>
+      </div>
+    );
+  } else {
+    navbutton = (
+      <div className="logoutbtn">
+        <Link to="#" onClick={handleLogout}>
+          Logout
+        </Link>
+      </div>
+    );
+  }
 
   return (
     <>
-      <div>{loginbutton}</div>
+      <div>{navbutton}</div>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <span className="lead">Login</span>

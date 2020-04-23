@@ -69,13 +69,24 @@ html {
 .loginbtn {
   display: flex;
   position: absolute;
-  top: .7rem;
-  right: 10%;
+  top: 0.8rem;
+  right: 4%;
 }
-@media only screen and (min-width:0px) and (max-width:800px){
-  .loginbtn{
+.logoutbtn {
+  display: flex;
+  position: absolute;
+  top: 0.8rem;
+  right: 4%;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+  .loginbtn {
     right: 22%;
-    top: .6rem;
+    top: 0.6rem;
+  }
+  .logoutbtn {
+    right: 22%;
+    top: 0.6rem;
   }
 }
 .loginbtn a {
@@ -86,12 +97,21 @@ html {
   border-radius: 100px;
   padding: 0.4rem 1.3rem 0.58rem;
 }
+.logoutbtn a {
+  border: 1.2px solid rgb(255, 81, 81);
+  text-decoration: none;
+  color: rgb(255, 81, 81);
+  background: transparent;
+  border-radius: 100px;
+  padding: 0.4rem 1.3rem 0.58rem;
+  font-weight: 700;
+}
 
 .nav-logo {
   margin-left: 2rem;
   height: 3.4rem;
   width: 3.7rem;
-  margin-top: 0.2rem;
+  margin-top: 0rem;
 }
 
 .nav-links {
