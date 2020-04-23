@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./css/dailytask.css";
 import { Link } from "react-router-dom";
 import $ from "jquery";
@@ -15,7 +15,7 @@ function DailyTask() {
     headers: {},
   }).done(function (data) {
     var obj = JSON.parse(JSON.stringify(data));
-    console.log(data);
+
     var details = "";
     for (var i = 0; i < obj.length; i++) {
       details +=

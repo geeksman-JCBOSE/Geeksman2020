@@ -25,7 +25,6 @@ function UpdateUser() {
   const [alertcolor, setAlertcolor] = useState("light");
 
   const handlePost = (e) => {
-    console.log(skill);
     if (branch === "") {
       setStatus("fill branch");
       setAlertcolor("danger");

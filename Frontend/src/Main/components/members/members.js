@@ -2,7 +2,6 @@ import React from "react";
 import "./members.css";
 import Navbar from "../mainlayout/mainlayoutcomp/navbar/navbar";
 import back from "./memtop.png";
-import { Link } from "react-router-dom";
 import $ from "jquery";
 
 class Members extends React.Component {
@@ -15,10 +14,16 @@ class Members extends React.Component {
       headers: {},
     }).done(function (data) {
       var obj = JSON.parse(JSON.stringify(data));
-      console.log(data);
+
       var details = "";
       for (var i = 0; i < obj.length; i++) {
-        if (obj[i].status == "jsec" || obj[i].status == "seceratory") {
+        if (
+          (obj[i].status === "jsec" ||
+            obj[i].status === "seceratory" ||
+            obj[i].status === "social" ||
+            obj[i].status === "session") &&
+          obj[i].year !== null
+        ) {
           details +=
             `
         <div class="col-sm-4 margincards">
@@ -88,7 +93,7 @@ class Members extends React.Component {
           </div>
           
     `;
-        } else {
+        } else if (obj[i].year !== null) {
           details +=
             `   <div class="col-sm-3 margincardmembers">
             <div class="dcards">
