@@ -6,9 +6,12 @@ import image from "./icons/logo.png";
 
 function Navbar() {
   var userpanel;
+  var navlinkclass;
   if (localStorage.getItem("loginstat") === "true") {
+    navlinkclass = "nav-links-login";
     userpanel = <Link to="/usergallery">userpanel</Link>;
   } else {
+    navlinkclass = "nav-links";
   }
 
   const handleClick = () => {
@@ -39,7 +42,7 @@ function Navbar() {
         <div className="logo">
           <img src={image} className="nav-logo" />
         </div>
-        <ul className="nav-links">
+        <ul className={navlinkclass}>
           <li>
             <Link to="/">home</Link>
           </li>
