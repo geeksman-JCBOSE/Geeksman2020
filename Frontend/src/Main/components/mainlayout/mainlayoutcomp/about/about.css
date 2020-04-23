@@ -20,9 +20,8 @@
   padding-bottom: 4rem;
 }
 .aboutdiv {
-
   background: url("./aboutbackground.png");
-  background-position: 50% 0%;
+  background-size: 100% 150%;
   height: 100vh;
 }
 .aboutcontent {
