@@ -1,3 +1,25 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Parag56 
+aayushme
+/
+Geeksman2020
+Private
+1
+20
+ Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security 0 Insights
+Geeksman2020/Frontend/src/Main/components/mainlayout/mainlayoutcomp/navbar/navbar.css
+@aayushme aayushme mobil view
+40fe9f2 12 hours ago
+@aayushme@Parag56
+286 lines (264 sloc)  4.76 KB
+  
 body {
   overflow: hidden !important;
 }
@@ -163,11 +185,19 @@ html {
   font-family: "Major Mono Display", monospace;
 }
 .nav-links a:hover {
+  color: #bfe7fa;; 
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+   
+  font-family: "Major Mono Display", monospace;
+}
+.nav-links-login a:hover {
   color: #bfe7fa;
   font-weight: bold;
   letter-spacing: 2px;
   text-decoration: none;
-  font-size: 0.85rem;
+  color: ;
   font-family: "Major Mono Display", monospace;
 }
 .loginbtn a:hover {
@@ -246,8 +276,32 @@ html {
     background-image: url("./icons/navbarbackground.jpg");
     z-index: 4;
   }
-
+  .nav-links-login{
+    position: absolute;
+    right: 0;
+    background-size: 67vh;
+    display: flex;
+    height: 92vh;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    background-image: url("./icons/navbarbackground.jpg");
+    z-index: 4;
+  }
   .nav-links li {
+    z-index: 5;
+    opacity: 0;
+    margin-bottom: 2rem;
+  }
+  .nav-links a:hover{
+    color: black;
+  }
+  .nav-links-login a:hover{
+    color: black;
+  }
+  .nav-links-login li{
     z-index: 5;
     opacity: 0;
     margin-bottom: 2rem;
@@ -256,7 +310,10 @@ html {
     color: black;
     font-size: 1.3rem;
   }
-
+  .nav-links-login a{
+    color: black;
+    font-size: 1.3rem;
+  }
   .burger {
     display: block;
     position: absolute;
@@ -284,3 +341,5 @@ html {
     border-radius: 50%;
   }
 }
+
+
