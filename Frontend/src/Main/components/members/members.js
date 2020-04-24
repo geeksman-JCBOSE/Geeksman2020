@@ -14,9 +14,18 @@ class Members extends React.Component {
       headers: {},
     }).done(function (data) {
       var obj = JSON.parse(JSON.stringify(data));
-
+      var batch = "";
       var details = "";
       for (var i = 0; i < obj.length; i++) {
+        if (obj[i].year === 1) {
+          batch = "2k19";
+        } else if (obj[i].year === 2) {
+          batch = "2k18";
+        } else if (obj[i].year === 3) {
+          batch = "2k17";
+        } else if (obj[i].year === 4) {
+          batch = "2k16";
+        }
         if (
           (obj[i].status === "jsec" ||
             obj[i].status === "seceratory" ||
@@ -60,8 +69,8 @@ class Members extends React.Component {
             obj[i].status +
             `</div>
                     <div class="year">` +
-            obj[i].year +
-            ` Year</div>
+            batch +
+            ` Batch</div>
                     <div class="description">
                       ` +
             obj[i].description +
@@ -127,8 +136,8 @@ class Members extends React.Component {
             obj[i].tagline +
             `</div>
                     <div class="year">` +
-            obj[i].year +
-            `</div>
+            batch +
+            ` Batch</div>
                     <div class="description">
                     ` +
             obj[i].description +
