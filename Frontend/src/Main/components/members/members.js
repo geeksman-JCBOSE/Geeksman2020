@@ -21,7 +21,8 @@ class Members extends React.Component {
           (obj[i].status === "jsec" ||
             obj[i].status === "seceratory" ||
             obj[i].status === "social" ||
-            obj[i].status === "session") &&
+            obj[i].status === "session" ||
+            obj[i].status === "Fourth Year") &&
           obj[i].year !== null
         ) {
           details +=
