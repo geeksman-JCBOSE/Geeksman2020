@@ -43,7 +43,7 @@ function UpdateUser() {
     } else if (skill === "") {
       setStatus("fill skills");
       setAlertcolor("danger");
-    } else if (picture === "" || picture[picture.length - 1] !== "h") {
+    } else if (picture === "") {
       setStatus("fill correct picture url");
       setAlertcolor("danger");
     } else {
