@@ -29,7 +29,7 @@ function Timeline() {
                 <h3 class="title">Club Became Official</h3>
                 <p class="description">
                   Finally the club gets its recognition as the official codechef
-                  campus chapter of JCBUST, under the guidance of Ms Neelan
+                  campus chapter of JCBUST, under the guidance of Dr Neelan
                   Duhan, the club coordinator
                 </p>
               </div>
