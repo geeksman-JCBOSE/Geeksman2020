@@ -45,7 +45,7 @@ class Members extends React.Component {
             `" class="dimgstyle" />
                 </div>
                 <h1 class="position">` +
-            obj[i].status +
+            (obj[i].year === 4 ? "Founder Member" : obj[i].status) +
             `</h1>
                 <div class="aboutd">
                   <span class="dname">` +
