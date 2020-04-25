@@ -16,9 +16,8 @@ function Timeline() {
               <div class="timeline-content">
                 <h3 class="title">Website Created</h3>
                 <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem
-                  erat.
+                  The website of geeksman is fully functional and ready to serve
+                  its members became a huge success for the club
                 </p>
               </div>
             </div>
@@ -29,9 +28,9 @@ function Timeline() {
               <div class="timeline-content">
                 <h3 class="title">Club Became Official</h3>
                 <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem
-                  erat.
+                  Finally the club gets its recognition as the official codechef
+                  campus chapter of JCBUST, under the guidance of Ms Neelan
+                  Duan, the club coordinator
                 </p>
               </div>
             </div>
@@ -42,9 +41,9 @@ function Timeline() {
               <div class="timeline-content">
                 <h3 class="title">First Batch</h3>
                 <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem
-                  erat.
+                  The first batch 2k18 batch came to the club with proper
+                  auditions and paved the way of glory for the club, by working
+                  hard and leaving no stone unterned
                 </p>
               </div>
             </div>
@@ -55,9 +54,9 @@ function Timeline() {
               <div class="timeline-content">
                 <h3 class="title">Geeksman Started</h3>
                 <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem
-                  erat.
+                  The club started with only two founding members (Mr Trilok and
+                  Mr Sahil), who started teaching soke juniors for the benifit
+                  of their juniors
                 </p>
               </div>
             </div>

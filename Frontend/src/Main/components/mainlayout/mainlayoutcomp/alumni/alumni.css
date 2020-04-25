@@ -49,6 +49,11 @@
   color: rgb(228, 108, 72);
   margin-bottom: -3rem;
 }
+.card-content p {
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+  color: gray;
+}
 
 .quotes {
   font-size: 1.2rem;
@@ -135,126 +140,106 @@
   height: 100%;
   width: 100%;
 }
-.carousel-cell p {
-  word-wrap: break-word;
-  text-align: center;
-  margin-bottom: 0.6rem;
-}
 
-.cellimb {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cellimb img {
-  border-radius: 50%;
-  height: 7rem;
-  width: 7rem;
-  border: 5px solid lightblue;
-}
-
-.carousel-cell h3 {
-  text-align: center;
-  font-weight: 400;
-  margin-bottom: 0;
-  font-size: 1.25rem;
-}
-
-.carousel-wrapper {
-  position: relative;
-  width: 100%;
+.container {
   height: 100%;
+  position: relative;
+}
+.middleArea {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  background-image: linear-gradient(#ffffff 50%, #ffffff 50%, #f0f3fc 50%);
-
-  overflow: hidden;
+  width: 150px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
 }
-.carousel-wrapper .carousel {
+.mySlider {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 0;
   width: 100%;
-  height: 29rem;
+  height: 200px;
+  transform: perspective(550px) translateY(-50%);
+  transform-style: preserve-3d;
+  /*overflow-x: hidden;*/
 }
-.carousel-wrapper .carousel .carousel-cell {
-  padding: 10px;
-  background-color: #ffffff;
-  width: 13.5rem;
-  height: auto;
-  min-width: 120px;
-  margin: 60px 50px;
-  transition: transform 500ms ease;
-}
-.carousel-cell h5 {
-  font-size: 1rem;
-  margin-bottom: 0.2rem;
-  line-height: 1;
-}
-.carousel-wrapper .carousel .carousel-cell .more {
-  display: block;
-  opacity: 0;
-  margin: 5px 0 15px 0;
-  text-align: center;
-  font-size: 10px;
-  color: #cfcfcf;
-  text-decoration: none;
-  transition: opacity 300ms ease;
-}
-.carousel-wrapper .carousel .carousel- cell .more:hover,
-.carousel-wrapper .carousel .carousel-cell .more:active,
-.carousel-wrapper .carousel .carousel-cell .more:visited,
-.carousel-wrapper .carousel .carousel-cell .more:focus {
-  color: #cfcfcf;
-  text-decoration: none;
-}
-.carousel-wrapper .carousel .carousel-cell .line {
+.mySlider .slideItems {
   position: absolute;
-  width: 2px;
-  height: 0;
-  background-color: black;
+  width: 12rem;
+  height: 18rem;
   left: 50%;
-  margin: 5px 0 0 -1px;
-  transition: height 300ms ease;
-  display: block;
+
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+  /*transform-style: preserve-3d;*/
+  transition: 0.5s;
 }
-.carousel-wrapper .carousel .carousel-cell .price {
-  position: absolute;
-  font-weight: 700;
-  margin: 45px auto 0 auto;
-  left: 50%;
-  transform: translate(-50%);
-  opacity: 0;
-  transition: opacity 300ms ease 300ms;
-}
-.carousel-wrapper .carousel .carousel-cell .price sup {
-  top: 2px;
-  position: absolute;
-}
-.carousel-wrapper .carousel .carousel-cell.is-selected {
-  transform: scale(1.2);
-}
-.carousel-wrapper .carousel .carousel-cell.is-selected .line {
-  height: 35px;
-}
-.carousel-wrapper .carousel .carousel-cell.is-selected .price,
-.carousel-wrapper .carousel .carousel-cell.is-selected .more {
+.slideItems.active {
+  transform: translateX(-50%) scale(1.2);
+  z-index: 2;
   opacity: 1;
 }
-.carousel-wrapper .flickity-page-dots {
-  display: none;
+.slideItems.prev {
+  /*transform:translateX(calc(-50% - 200px)) rotateY(70deg) skewY(-9deg);*/
+  opacity: 0.9;
 }
-.carousel-wrapper .flickity-viewport,
-.carousel-wrapper .flickity-slider {
-  overflow: visible;
+/*.item2{background-color: #ff6085;z-index: 1;}*/
+.slideItems.next {
+  /*transform:translateX(calc(-50% + 200px)) rotateY(-70deg) skewY(9deg);*/
+  opacity: 0.9;
 }
 
-@media only screen and (min-width: 280px) and (max-width: 500px) {
-  .carousel-wrapper .carousel .carousel-cell {
-    width: 12.5rem;
+.item1 {
+  background-color: #a4a4a4;
+  z-index: 1;
+}
+.item2 {
+  background-color: #a4a4a4;
+  z-index: 1;
+}
+.item3 {
+  background-color: #a4a4a4;
+  z-index: 1;
+}
+.item4 {
+  background-color: #a4a4a4;
+  z-index: 1;
+}
+
+.card-content h1 {
+  font-size: 1.2rem;
+}
+.card-content p {
+  word-wrap: break-word;
+  margin-bottom: 0.1rem;
+}
+.myNavs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: white;
+}
+
+.myNavs .left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.myNavs .right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.myNavs {
+  font-size: 3rem;
+  cursor: pointer;
+  color: black;
+  transition: 0.3s;
+}
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+  .myNavs {
+    color: rgb(228, 108, 72);
   }
 }
