@@ -66,7 +66,7 @@ class Members extends React.Component {
             obj[i].user.last_name +
             `</div>
                     <div class="membersline">` +
-            obj[i].status +
+            (obj[i].status = "Fourth Year" ? "Founder" : obj[i].status) +
             `</div>
                     <div class="year">` +
             batch +

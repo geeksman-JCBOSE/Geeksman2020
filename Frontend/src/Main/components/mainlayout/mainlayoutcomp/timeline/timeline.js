@@ -30,7 +30,7 @@ function Timeline() {
                 <p class="description">
                   Finally the club gets its recognition as the official codechef
                   campus chapter of JCBUST, under the guidance of Ms Neelan
-                  Duan, the club coordinator
+                  Duhan, the club coordinator
                 </p>
               </div>
             </div>
