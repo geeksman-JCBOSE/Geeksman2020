@@ -43,6 +43,7 @@ body {
   backface-visibility: hidden;
   position: relative;
   margin-left: 4rem;
+  margin-bottom: 1rem;
 }
 .dmcard {
   height: 22rem;
@@ -54,6 +55,7 @@ body {
   backface-visibility: hidden;
   position: relative;
   margin-left: 1.3rem;
+  margin-bottom: 1rem;
 }
 .hovermaterial {
   position: absolute;
@@ -290,7 +292,7 @@ body {
   }
   .dmcard {
     height: 20rem;
-    margin-top: 4.2rem;
+    margin-top: 2rem;
     max-width: 18rem;
     background-color: rgba(248, 248, 248, 0.8);
     box-shadow: 1px 2px 3px rgba(39, 87, 141, 0.2);
