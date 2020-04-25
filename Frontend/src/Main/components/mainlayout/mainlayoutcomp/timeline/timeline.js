@@ -55,8 +55,8 @@ function Timeline() {
                 <h3 class="title">Geeksman Started</h3>
                 <p class="description">
                   The club started with only two founding members (Mr Trilok and
-                  Mr Sahil), who started teaching soke juniors for the benifit
-                  of their juniors
+                  Mr Sahil), who started teaching juniors for the benifit of
+                  them.
                 </p>
               </div>
             </div>
