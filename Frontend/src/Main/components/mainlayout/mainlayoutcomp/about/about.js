@@ -34,9 +34,7 @@ class About extends React.Component {
                 Hackathons are the primary siblings of Geeksman. This Dynamic
                 club of JCBUST was found approximately an year ago by 4 Alumni's
                 of the college (currently placed in giant MNC's like Samsung,
-                Amazon , Directi) with a moto of developing the environment of
-                competetive programming and to develop the art of problem
-                solving among students. 
+                Amazon , Directi)
               </p>
             </div>
           </div>

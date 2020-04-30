@@ -134,7 +134,7 @@ class Alumni extends Component {
                     <div className="card-content">
                       <p>
                         Directi
-                        <br />A fve star coder and a down to aearth human being
+                        <br />A five star coder and a down to earth human being
                         <hr className="alumnihr" />
                       </p>
                       <h1>Kashish</h1>
@@ -148,7 +148,7 @@ class Alumni extends Component {
                       <p>
                         Amazon
                         <br />
-                        Our founding member, who is pro in evrything
+                        Our founding member, who is pro in everything
                         <hr className="alumnihr" />
                       </p>
                       <h1>Sahil Singla</h1>
