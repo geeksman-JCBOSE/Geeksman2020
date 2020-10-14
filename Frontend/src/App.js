@@ -1,5 +1,4 @@
 import React from 'react';
-import Spinner from 'react-spinner-material';
 import AppRouter from './Main/AppRouter';
 import './App.css';
 window.$token = '';
