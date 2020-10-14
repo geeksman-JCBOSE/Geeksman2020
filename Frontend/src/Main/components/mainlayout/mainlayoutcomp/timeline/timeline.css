@@ -4,6 +4,10 @@
   margin-top: -2rem;
   color: #5c5b5b;
 }
+
+.official_club {
+  width: 100%;
+}
 .timelinehr {
   width: 38%;
   margin-top: -0.5rem;
@@ -36,13 +40,13 @@
 }
 .main-timeline5 .timeline:after,
 .main-timeline5 .timeline:before {
-  content: "";
+  content: '';
   display: block;
   width: 100%;
   clear: both;
 }
 .main-timeline5 .timeline:before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   box-shadow: -8px 0 5px -5px rgba(0, 0, 0, 0.5) inset;
@@ -85,7 +89,7 @@
   position: relative;
 }
 .main-timeline5 .timeline-content:before {
-  content: "";
+  content: '';
   width: 20%;
   height: 15px;
   background: #f44556;

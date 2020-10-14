@@ -5,7 +5,6 @@ import Events from "./components/events/events";
 import DailyTask from "./components/userpanel/dailytask";
 import Gallery from "./components/userpanel/gallery";
 import UpdateUser from "./components/userpanel/updateuser";
-import Developer from "./components/developers/developer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function AppRouter() {
@@ -19,7 +18,7 @@ function AppRouter() {
           <Route path="/usertask" exact component={DailyTask} />
           <Route path="/userupdate" exact component={UpdateUser} />
           <Route path="/usergallery" exact component={Gallery} />
-          <Route path="/developer" exact component={Developer} />
+          
         </div>
       </Switch>
     </Router>

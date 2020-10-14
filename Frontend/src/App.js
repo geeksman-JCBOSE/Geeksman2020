@@ -1,11 +1,12 @@
-import React from "react";
-import AppRouter from "./Main/AppRouter";
-import "./App.css";
-window.$token = "";
+import React from 'react';
+import Spinner from 'react-spinner-material';
+import AppRouter from './Main/AppRouter';
+import './App.css';
+window.$token = '';
 window.$loginstatus = false;
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <AppRouter />
     </div>
   );

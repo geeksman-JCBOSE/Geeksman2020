@@ -1,37 +1,41 @@
-import React from "react";
-import "./members.css";
-import Navbar from "../mainlayout/mainlayoutcomp/navbar/navbar";
-import back from "./memtop.png";
-import $ from "jquery";
+import React, { useState } from 'react';
+import './members.css';
+import Navbar from '../mainlayout/mainlayoutcomp/navbar/navbar';
+import back from './memtop.png';
+import $ from 'jquery';
+import { Spinner } from 'react-bootstrap';
 
-class Members extends React.Component {
-  componentDidMount() {
+function Members() {
+  const [loader, setLoader] = useState(false);
+  const api = () => {
     $.ajax({
-      type: "GET",
+      type: 'GET',
       crossDomain: true,
-      dataType: "json",
-      url: "https://geeksman.herokuapp.com/api/members/",
+      dataType: 'json',
+      url: 'https://geeksman.herokuapp.com/api/members/',
       headers: {},
     }).done(function (data) {
       var obj = JSON.parse(JSON.stringify(data));
-      var batch = "";
-      var details = "";
+      var batch = '';
+      var details = '';
+      setLoader(true);
+
       for (var i = 0; i < obj.length; i++) {
         if (obj[i].year === 1) {
-          batch = "2k19";
+          batch = '2k19';
         } else if (obj[i].year === 2) {
-          batch = "2k18";
+          batch = '2k18';
         } else if (obj[i].year === 3) {
-          batch = "2k17";
+          batch = '2k17';
         } else if (obj[i].year === 4) {
-          batch = "2k16";
+          batch = '2k16';
         }
         if (
-          (obj[i].status === "jsec" ||
-            obj[i].status === "seceratory" ||
-            obj[i].status === "social" ||
-            obj[i].status === "session" ||
-            obj[i].status === "Fourth Year") &&
+          (obj[i].status === 'jsec' ||
+            obj[i].status === 'seceratory' ||
+            obj[i].status === 'social' ||
+            obj[i].status === 'session' ||
+            obj[i].status === 'Fourth Year') &&
           obj[i].year !== null
         ) {
           details +=
@@ -45,7 +49,7 @@ class Members extends React.Component {
             `" class="dimgstyle" />
                 </div>
                 <h1 class="position">` +
-            (obj[i].year === 4 ? "Founder Member" : obj[i].status) +
+            (obj[i].year === 4 ? 'Founder Member' : obj[i].status) +
             `</h1>
                 <div class="aboutd">
                   <span class="dname">` +
@@ -66,7 +70,7 @@ class Members extends React.Component {
             obj[i].user.last_name +
             `</div>
                     <div class="membersline">` +
-            (obj[i].status == "Fourth Year" ? "Founder" : obj[i].status) +
+            (obj[i].status == 'Fourth Year' ? 'Founder' : obj[i].status) +
             `</div>
                     <div class="year">` +
             batch +
@@ -171,29 +175,32 @@ class Members extends React.Component {
         }
       }
 
-      $("#Jsecdetails").append(details);
+      $('#Jsecdetails').append(details);
     });
-  }
+  };
+  api();
 
-  render() {
-    return (
-      <div className="Members">
-        <Navbar />
-        <div className="memtopback">
-          <img src={back} className="memtopbackstyle" />
-          <div className="memtop-text">
-            <span className="memtop-header">Our Team</span>
-            <span className="memtop-tagline">
-              Our dedicated and hardwording team
-            </span>
-          </div>
-        </div>
-        <div className="jumbotron">
-          <div className="row" id="Jsecdetails"></div>
+  return (
+    <div className='Members'>
+      <Navbar />
+      <div className='memtopback'>
+        <img src={back} className='memtopbackstyle' />
+        <div className='memtop-text'>
+          <span className='memtop-header'>Our Team</span>
+          <span className='memtop-tagline'>
+            Our dedicated and hardwording team
+          </span>
         </div>
       </div>
-    );
-  }
+      <div className='jumbotron'>
+        {loader ? (
+          <div className='row' id='Jsecdetails' />
+        ) : (
+          <Spinner animation='border' variant='primary' />
+        )}
+      </div>
+    </div>
+  );
 }
 
 export default Members;
