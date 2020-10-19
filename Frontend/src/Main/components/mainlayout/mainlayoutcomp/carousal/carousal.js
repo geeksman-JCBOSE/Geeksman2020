@@ -1,6 +1,6 @@
 import React from 'react';
 import './carousal.css';
-import pexels from './ymca2.mp4';
+import pexels from './ymca.mp4';
 import { Link } from 'react-router-dom';
 import back from '../navbar/icons/logo.png';
 class Carousal extends React.Component {

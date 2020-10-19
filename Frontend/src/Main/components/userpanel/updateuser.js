@@ -9,10 +9,11 @@ import Navbar from "../mainlayout/mainlayoutcomp/navbar/navbar";
 import { Alert } from "react-bootstrap";
 
 function UpdateUser() {
-  const [first_name, setFirst_name] = useState(localStorage.getItem("f_name"));
-  const [last_name, setLast_name] = useState(localStorage.getItem("l_name"));
+
   const [year, setYear] = useState("");
   const [tagline, setTagline] = useState("");
+  const [first_name,setFirst_name]=useState("");
+  const [last_name,setLast_name]=useState("");
   const [branch, setBranch] = useState("");
   const [address, setAddress] = useState("");
   const [skill, setSkill] = useState("");
@@ -28,7 +29,7 @@ function UpdateUser() {
     if (branch === "") {
       setStatus("fill branch");
       setAlertcolor("danger");
-    } else if (phone_no.length != 10) {
+    } else if (phone_no.length !== 10) {
       setStatus("Enter Valid Phone Number");
       setAlertcolor("danger");
     } else if (tagline === "") {

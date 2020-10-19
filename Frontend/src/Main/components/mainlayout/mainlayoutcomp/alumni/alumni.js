@@ -115,7 +115,7 @@ class Alumni extends Component {
                 <div class="mySlider">
                   <div class="slideItems item1 active">
                     <div>
-                      <img src={pic1} className="cardimgstyle"></img>
+                      <img src={pic1} className="cardimgstyle" alt="none"></img>
                     </div>
                     <div className="card-content">
                       <p>
@@ -129,7 +129,7 @@ class Alumni extends Component {
                   </div>
                   <div class="slideItems item2 next">
                     <div>
-                      <img src={pic2} className="cardimgstyle"></img>
+                      <img src={pic2} className="cardimgstyle" alt="none"></img>
                     </div>
                     <div className="card-content">
                       <p>
@@ -142,7 +142,7 @@ class Alumni extends Component {
                   </div>
                   <div class="slideItems item3 next">
                     <div>
-                      <img src={pic3} className="cardimgstyle"></img>
+                      <img src={pic3} className="cardimgstyle" alt="none"></img>
                     </div>
                     <div className="card-content">
                       <p>
@@ -156,7 +156,7 @@ class Alumni extends Component {
                   </div>
                   <div class="slideItems item4 next">
                     <div>
-                      <img src={pic4} className="cardimgstyle"></img>
+                      <img src={pic4} className="cardimgstyle" alt="none"></img>
                     </div>
                     <div className="card-content">
                       <p>

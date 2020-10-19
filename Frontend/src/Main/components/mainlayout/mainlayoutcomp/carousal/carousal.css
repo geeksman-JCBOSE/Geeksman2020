@@ -117,9 +117,19 @@
     height: 100%;
     width: 100%;
   }
+  .backimg {
+    height: 31%;
+    width: 26%;
+    mix-blend-mode: normal;
+    margin-top: -4.5rem;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -1.3rem;
+  }
   .videobox video {
     width: 100%;
-    display: none;
+    height: 7.5rem;
   }
   .carouselx7 {
     height: 100vh;
